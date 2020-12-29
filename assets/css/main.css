@@ -12,11 +12,11 @@
 }
 .focus-list-head p {
     color: #DD911F;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 500;
 }
 .focus-list-body > h4 {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     line-height: 2rem;
     font-weight: 700;
     color: #fff;
@@ -26,6 +26,86 @@
     font-size: 1.15rem;
     line-height: 1.75rem;
 }
+.main-container {
+    width: 90%;
+}
+
+header .main-container {
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid transparent;
+    border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.430287) 21.12%, rgba(255, 255, 255, 0.8) 50.28%, rgba(255, 255, 255, 0.518066) 77.89%, rgba(255, 255, 255, 0) 100%) 30 stretch;
+}
+
+.banner {
+    background: linear-gradient(180deg,#001231, #000000 100%);
+    display: flex;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+}
+.banner .main-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.banner * {
+    color: #fff;
+}
+.banner h5 {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    color: #fff;
+    opacity: 0.8;
+}
+.banner .btn-primary {
+    padding: 0.75rem 1.5rem;
+    min-width: 12.5rem;
+    font-size: 1.05rem;
+}
+
+#timer > div {
+    background: radial-gradient(69.8% 56.23% at 50.34% 100%, rgba(52, 122, 244, 0.27) 0%, rgba(52, 122, 244, 0) 100%);
+    /* filter: blur(20px); */
+    max-width: 20%;
+    flex: 1 0 20%;
+    padding: 1.75rem 1.5rem;
+    margin-right: 5%;
+}
+
+#timer > div:last-child {
+    margin: 0;
+}
+
+.banner .carousel-indicators {
+    margin: 0;
+    bottom: -5%;
+}
+
+.banner .carousel-indicators li {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0.1rem solid rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5);
+    position: relative;
+}
+.banner .carousel-indicators li.active {
+    border-color: #fff;
+    background-color: transparent;
+}
+.banner .carousel-indicators li.active:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
 
 @media screen and (max-width: 575px) {
     .our-core {

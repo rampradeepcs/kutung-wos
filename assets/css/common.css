@@ -14,11 +14,44 @@
 html, body {
     min-height: 100%;
 }
-body {
+html, header {
     max-width: 1920px;
     margin: 0 auto;
 }
+.btn-primary {
+    background-color: #347AF4;
+    border-radius: 0;
+    border: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.logo {
+    max-width: 10rem;
+}
 
+header {
+    background-color: #000f28;
+    z-index: 1000;
+}
+header ul {
+    text-align: right;
+}
+
+header ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header ul li a {
+    display: block;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 0.85rem;
+}
 
 @media screen and (min-width: 320px) {
     * {
@@ -32,21 +65,42 @@ body {
         font-size: 2.5rem;
         font-weight: 600;
     }
+    .timer-block {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width: 991px) {
-    * {
-        font-size: 16px;
-    }
     .common-section {
         padding: 5rem 1.875rem;
     }
     .common-head {
-        font-size: 3rem;
+        font-size: 2.75rem;
+    }
+    .timer-block {
+        width: 75%;
+    }
+    .banner {
+        height: 100vh;
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
     * {
         font-size: 18px;
+    }
+    .timer-block {
+        width: 55%;
+    }
+    .banner {
+        height: 90vh;
+    }
+    .banner .main-container {
+        height: 100%;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .banner .main-container {
+        height: 85%;
     }
 }

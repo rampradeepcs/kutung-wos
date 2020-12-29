@@ -41,12 +41,15 @@ header .main-container {
     display: flex;
     align-items: center;
     padding-top: 7rem;
+    height: 100vh;
     padding-bottom: 3.5rem;
+    position: relative;
 }
 .banner .main-container {
     display: flex;
     align-items: center;
     position: relative;
+    height: 90%;
 }
 .banner * {
     color: #fff;

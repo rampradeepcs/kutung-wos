@@ -5,27 +5,32 @@
     background-position: right bottom;
     background-size: 30rem;
 }
+
 .focus-list-head figure {
     background: rgba(255, 255, 255, 0.08);
     width: 100%;
     max-width: 6rem;
 }
+
 .focus-list-head p {
     color: #DD911F;
     font-size: 1.35rem;
     font-weight: 500;
 }
-.focus-list-body > h4 {
+
+.focus-list-body>h4 {
     font-size: 1.75rem;
     line-height: 2rem;
     font-weight: 700;
     color: #fff;
 }
-.focus-list-body > p {
+
+.focus-list-body>p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.15rem;
     line-height: 1.75rem;
 }
+
 .main-container {
     width: 90%;
 }
@@ -37,7 +42,7 @@ header .main-container {
 }
 
 .banner {
-    background: linear-gradient(180deg,#001231, #000000 100%);
+    background: linear-gradient(180deg, #001231, #000000 100%);
     display: flex;
     align-items: center;
     padding-top: 7rem;
@@ -45,28 +50,32 @@ header .main-container {
     padding-bottom: 3.5rem;
     position: relative;
 }
+
 .banner .main-container {
     display: flex;
     align-items: center;
     position: relative;
     height: 90%;
 }
+
 .banner * {
     color: #fff;
 }
+
 .banner h5 {
     font-size: 1.5rem;
     letter-spacing: 0.15rem;
     color: #fff;
     opacity: 0.8;
 }
+
 .banner .btn-primary {
     padding: 0.75rem 1.5rem;
     min-width: 12.5rem;
     font-size: 1.05rem;
 }
 
-#timer > div {
+#timer>div {
     background: radial-gradient(69.8% 56.23% at 50.34% 100%, rgba(52, 122, 244, 0.27) 0%, rgba(52, 122, 244, 0) 100%);
     /* filter: blur(20px); */
     max-width: 20%;
@@ -75,7 +84,7 @@ header .main-container {
     margin-right: 5%;
 }
 
-#timer > div:last-child {
+#timer>div:last-child {
     margin: 0;
 }
 
@@ -89,14 +98,16 @@ header .main-container {
     height: 1rem;
     border-radius: 50%;
     background-color: transparent;
-    border: 0.1rem solid rgba(255,255,255,0.5);
-    background-color: rgba(255,255,255,0.5);
+    border: 0.1rem solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     position: relative;
 }
+
 .banner .carousel-indicators li.active {
     border-color: #fff;
     background-color: transparent;
 }
+
 .banner .carousel-indicators li.active:after {
     content: "";
     position: absolute;
@@ -109,6 +120,18 @@ header .main-container {
     transform: translate(-50%, -50%);
 }
 
+.endtxt {
+    color: #DD911F;
+}
+
+.bring-vision {
+    background: #010D22;
+}
+
+.bring-vision p,
+.bring-vision h2 {
+    color: #ffffff;
+}
 
 @media screen and (max-width: 575px) {
     .our-core {

@@ -25,4 +25,20 @@ function makeTimer() {
 
 }
 
-setInterval(function() { makeTimer(); }, 1000);
+$(document).ready(function() {
+    
+    makeTimer();
+    // $('.carousel').carousel({
+    //     interval: false,
+    // });
+
+    $('#bannerCarousel').on('slide.bs.carousel', function (e) {
+        console.log(e.from, e.to);
+        if(e.from == 0)
+            $(this).find(".carousel-inner").removeClass("has-bg");
+        else if (e.to == 0)
+            setTimeout(function() {
+                $("#bannerCarousel").find(".carousel-inner").addClass("has-bg");
+            }, 500);
+    });
+});

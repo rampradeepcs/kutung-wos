@@ -26,13 +26,13 @@
                         <img class="w-100" src="assets/img/Logo.svg" alt="Logo">
                     </figure>
                 </div>
-                <div class="d-flex align-items-center justify-content-end col-6 pr-0 ml-auto">
+                <div class="d-flex align-items-center justify-content-end col-6 pr-0 ml-auto nav-item">
                     <ul class="m-0 p-0">
                         <li>
                             <a href="javscript:void(0)">Home</a>
                         </li>
                         <li>
-                            <a href="javscript:void(0)">Chairman's Message</a>
+                            <a href="chairman-msg.html">Chairman's Message</a>
                         </li>
                         <li>
                             <a href="javscript:void(0)">Contact Us</a>
@@ -46,29 +46,30 @@
     <main class="w-100">
         <!--Banner-->
         <section class="w-100 common-section banner">
-            <div class="mx-auto text-center main-container">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div id="bannerCarousel" class="w-100 carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item ">
+            <div class="mx-auto main-container">
+                <div id="bannerCarousel" class="w-100 h-100 carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                        <li data-target="#bannerCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="h-100 carousel-inner d-flex align-items-center has-bg">
+                        <div class="carousel-item active">
                             <div class="row m-0">
-                                <div class="col-lg-5 text-left">
-                                    <h4>Building communities interwoven with emotive love, creativity, nature and cutting edge technology</h4>
+                                <div class="col-12 col-md-8 col-lg-4 p-0 pr-lg-4">
+                                    <h4 class="m-0 mb-5 title-banner">Building communities interwoven with emotive love, creativity, nature and cutting edge technology</h4>
+                                    <button class="btn btn-primary">Register Now</button>
                                 </div>
-                                <div class="col-lg-7">
+                                <!-- <div class="col-lg-8 p-0 pl-lg-4">
                                     <img class="w-100" src="assets/img/Illustrations/Banner_1 Illustration.png" alt="Banner1 Image">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item text-center">
                             <h5 class="m-0 mb-4">The wait is almost over.</h5>
                             <h4 class="m-0 mb-5 common-head">We are launching the World of Span</h4>
                             <div class="mb-5 timer-block">
-                                <div class="w-100 d-flex align-tems-center justify-content-center" id="timer">
+                                <div class="w-100 d-flex align-items-center justify-content-center" id="timer">
                                     <div id="days"></div>
                                     <div id="hours"></div>
                                     <div id="minutes"></div>

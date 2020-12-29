@@ -51,6 +51,13 @@ header ul li a {
     color: #fff;
     padding: 1rem 1.5rem;
     font-size: 0.85rem;
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 @media screen and (min-width: 320px) {
@@ -69,6 +76,9 @@ header ul li a {
         width: 90%;
         margin: 0 auto;
     }
+    .banner {
+        height: 75vh;
+    }
 }
 @media screen and (min-width: 991px) {
     .common-section {
@@ -82,18 +92,30 @@ header ul li a {
     }
     .banner {
         height: 100vh;
+    }    
+    .carousel-inner.has-bg {
+        background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
+        background-position: right bottom;
+        background-size: 40rem;
+    }
+    .carousel-item .banner-img {
+        max-width: 45rem;
     }
 }
 
+@media screen and (min-width: 1450px) {
+    .carousel-inner.has-bg {
+        background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
+        background-position: right bottom;
+        background-size: 32.5rem;
+    }
+}
 @media screen and (min-width: 1600px) {
     * {
         font-size: 18px;
     }
     .timer-block {
         width: 55%;
-    }
-    .banner {
-        height: 90vh;
     }
     .banner .main-container {
         height: 100%;
@@ -102,5 +124,10 @@ header ul li a {
 @media screen and (min-width: 1920px) {
     .banner .main-container {
         height: 85%;
+    }
+    .carousel-inner.has-bg {
+        background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
+        background-position: right bottom;
+        background-size: 50rem;
     }
 }

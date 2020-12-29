@@ -120,7 +120,7 @@ header .main-container {
     transform: translate(-50%, -50%);
 }
 
-.endtxt {
+.page-bg .org-txt {
     color: #DD911F;
 }
 
@@ -131,6 +131,37 @@ header .main-container {
 .bring-vision p,
 .bring-vision h2 {
     color: #ffffff;
+}
+
+.footer-bg {
+    background-color: #111828;
+}
+
+.footer-bg p {
+    color: #989898;
+    align-items: center;
+}
+
+.page-bg {
+    background: linear-gradient(180.81deg, #051632 0.79%, #000918 99.4%);
+}
+
+.page-bg h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.page-bg p {
+    color: rgba(255, 255, 255, .6);
+    font-size: 1rem;
+}
+
+.social-icon {
+    max-width: 2rem;
+    padding: .1rem .3rem;
+    border: 2px solid #347AF4;
+    box-shadow: inset 0px 0px 20px rgba(52, 122, 244, 0.4);
+    background: linear-gradient(93.17deg, rgba(3, 9, 23, 0.6) 0%, rgba(3, 9, 23, 0) 100%);
 }
 
 @media screen and (max-width: 575px) {

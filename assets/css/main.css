@@ -1,0 +1,35 @@
+.our-core {
+    background-color: #000F28;
+    background-image: url(../img/Our_Core_focus_Ellipse.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 30rem;
+}
+.focus-list-head figure {
+    background: rgba(255, 255, 255, 0.08);
+    width: 100%;
+    max-width: 6rem;
+}
+.focus-list-head p {
+    color: #DD911F;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.focus-list-body > h4 {
+    font-size: 1.85rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+.focus-list-body > p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+}
+
+@media screen and (max-width: 575px) {
+    .our-core {
+        background: none;
+        background-color: #000F28;
+    }
+}

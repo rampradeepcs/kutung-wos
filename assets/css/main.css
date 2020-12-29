@@ -5,26 +5,43 @@
     background-position: right bottom;
     background-size: 30rem;
 }
+
 .focus-list-head figure {
     background: rgba(255, 255, 255, 0.08);
     width: 100%;
     max-width: 6rem;
 }
+
 .focus-list-head p {
     color: #DD911F;
     font-size: 1.5rem;
     font-weight: 500;
 }
-.focus-list-body > h4 {
+
+.focus-list-body>h4 {
     font-size: 1.85rem;
     line-height: 2rem;
     font-weight: 700;
     color: #fff;
 }
-.focus-list-body > p {
+
+.focus-list-body>p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.15rem;
     line-height: 1.75rem;
+}
+
+.endtxt {
+    color: #DD911F;
+}
+
+.bring-vision {
+    background: #010D22;
+}
+
+.bring-vision p,
+.bring-vision h2 {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 575px) {

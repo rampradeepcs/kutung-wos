@@ -25,7 +25,8 @@
     color: #fff;
 }
 
-.focus-list-body > p, .carousel-item p {
+.focus-list-body>p,
+.carousel-item p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.15rem;
     line-height: 1.75rem;
@@ -120,6 +121,10 @@ header .main-container {
     transform: translate(-50%, -50%);
 }
 
+.page-bg .org-txt {
+    color: #DD911F;
+}
+
 .title-banner {
     font-size: 2.25rem;
     line-height: 3.5rem;
@@ -174,8 +179,40 @@ header .main-container {
     background: #010D22;
 }
 
-.bring-vision p, .bring-vision h2 {
+.bring-vision p,
+.bring-vision h2 {
     color: #fff;
+}
+
+.footer-bg {
+    background-color: #111828;
+}
+
+.footer-bg p {
+    color: #989898;
+    align-items: center;
+}
+
+.page-bg {
+    background: linear-gradient(180.81deg, #051632 0.79%, #000918 99.4%);
+}
+
+.page-bg h2 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.page-bg p {
+    color: rgba(255, 255, 255, .6);
+    font-size: 1rem;
+}
+
+.social-icon {
+    max-width: 2rem;
+    padding: .1rem .3rem;
+    border: 2px solid #347AF4;
+    box-shadow: inset 0px 0px 20px rgba(52, 122, 244, 0.4);
+    background: linear-gradient(93.17deg, rgba(3, 9, 23, 0.6) 0%, rgba(3, 9, 23, 0) 100%);
 }
 
 @media screen and (max-width: 575px) {
@@ -183,9 +220,7 @@ header .main-container {
         background: none;
         background-color: #000F28;
     }
-
-     /* RP */
-
+    /* RP */
     .justify-content-end.ml-auto.nav-item {
         position: fixed !important;
         padding: 0;
@@ -199,25 +234,23 @@ header .main-container {
         justify-items: center;
         background-color: #020e29;
     }
-    
     header ul li {
         display: inline-block;
         width: 33%;
         float: left;
         text-align: center;
     }
-    
     header ul li a {
         padding: 1rem 1.5rem 8px;
         font-size: 14px;
     }
-    
-    header ul li:first-child a, header ul li:last-child a {padding: 1.5rem 1.5rem 8px;}
-
+    header ul li:first-child a,
+    header ul li:last-child a {
+        padding: 1.5rem 1.5rem 8px;
+    }
     .banner .carousel-indicators {
         margin: 0;
         bottom: 2%;
     }
-
     /* RP */
 }

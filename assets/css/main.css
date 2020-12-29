@@ -150,9 +150,10 @@ header .main-container {
         display: inline-block !important;
         max-width: 100%;
         left: 0px;
-        bottom: calc(-100vh - -58px);
+        bottom: calc(-100vh - -62px);
         justify-items: center;
         background-color: #020e29;
+        border-top: 1px solid rgb(255 255 255 / 0.15);
     }
     
     header ul li {

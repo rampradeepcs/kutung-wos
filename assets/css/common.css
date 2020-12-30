@@ -115,6 +115,10 @@ header ul li a:hover,
     * {
         font-size: 14px;
     }
+    .title-banner {
+        font-size: 1.75rem;
+        line-height: 3.5rem;
+    }
     .common-section {
         padding: 4rem 1.25rem;
     }
@@ -197,10 +201,10 @@ header ul li a:hover,
     footer .row>div:nth-child(3) {
         order: 2;
     }
-    .bring-vision-two .row>div:nth-child(2) {
+    .bring-vision .row>div:nth-child(2) {
         order: 1;
     }
-    .bring-vision-two .row>div:nth-child(1) {
+    .bring-vision .row>div:nth-child(1) {
         order: 2;
     }
     .projects .row>div:first-child {
@@ -261,7 +265,7 @@ header ul li a:hover,
         max-width: 35rem;
     }
     .carousel-item .banner-img-sm {
-        max-width: 27.5rem;
+        max-width: 18.5rem;
     }
     .title-banner {
         font-size: 1.5rem;
@@ -313,19 +317,16 @@ header ul li a:hover,
         background-color: #1F2530;
         padding: 1.5rem 1.25rem;
     }
-    
     .chMan-img-block-content h4 {
         font-size: 1.5rem;
         font-weight: 600;
         line-height: 2.25rem;
     }
-    
     .chMan-img-block-content h5 {
-        color: rgba(255,255,255,0.8);
+        color: rgba(255, 255, 255, 0.8);
         font-size: 1.35rem;
         font-weight: 600;
     }
-    
     .chMan-img-block {
         width: 100%;
     }
@@ -366,15 +367,21 @@ header ul li a:hover,
         min-height: 32.5rem;
         justify-content: center;
     }
-    
     .chMan-img-block {
         width: 80%;
+    }
+    .carousel-item .banner-img-sm {
+        max-width: 27.5rem;
     }
 }
 
 @media screen and (min-width: 992px) {
     .common-section {
         padding: 5rem 1.875rem;
+    }
+    .title-banner {
+        font-size: 2.25rem;
+        line-height: 3.5rem;
     }
     header {
         padding: 0 1.875rem;
@@ -490,9 +497,8 @@ header ul li a:hover,
     .bring-vision-two .row>div:nth-child(1) {
         order: 1;
     }
-    
     .chMan-img-block {
-        width: 65%;
+        width: 75%;
     }
     .odd .row>div:nth-child(1) {
         order: 1;
@@ -542,6 +548,9 @@ header ul li a:hover,
         background-position: -8rem -25rem;
         background-size: 130rem;
     }
+    .chMan-img-block {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1450px) {
@@ -565,6 +574,12 @@ header ul li a:hover,
         background: url(../img/Illustrations/vision-wos.png) no-repeat;
         background-position: -9rem -30rem;
         background-size: 140rem;
+    }
+    .owl-thumb-item img {
+        width: 12rem;
+    }
+    .chMan-img-block {
+        width: 62.5%;
     }
 }
 

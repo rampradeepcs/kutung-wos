@@ -110,7 +110,7 @@ header ul li a:hover {
         font-size: 14px;
     }
     .common-section {
-        padding: 3rem 1.25rem;
+        padding: 4rem 1.25rem;
     }
     footer {
         padding: 0 1.25rem;
@@ -209,7 +209,7 @@ header ul li a:hover {
         height: 100vh;
         padding: 0;
         width: 100%;
-        max-width: 20rem;
+        max-width: 22.5rem;
         background-color: #010D22;
         transition: all 0.6s ease-in-out;
     }
@@ -261,6 +261,20 @@ header ul li a:hover {
         margin-right: 5%;
         text-align: center;
     }
+    .we-aim figure {
+        overflow: hidden;
+        margin: 0 -1.25rem -4rem !important;
+    }
+    .vision-wos figure {
+        overflow: hidden;
+        margin: -4rem -1.25rem 0 !important;
+    }
+    .we-aim figure img {
+        transform: scale(1.75) translate(0, 22.5%);
+    }
+    .vision-wos figure img {
+        transform: scale(1.65) translate(8%, -12.5%);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -296,7 +310,7 @@ header ul li a:hover {
     }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
     .common-section {
         padding: 5rem 1.875rem;
     }
@@ -310,7 +324,7 @@ header ul li a:hover {
         width: 75%;
     }
     .carousel-inner.has-bg {
-        background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
+        background: url(../img/Illustrations/banner1.png) no-repeat;
         background-position: right bottom;
         background-size: 40rem;
     }
@@ -380,6 +394,36 @@ header ul li a:hover {
     .mh-55 {
         min-height: 55rem;
     }
+    
+    .we-aim:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/Illustrations/we-aim.png) no-repeat;
+        background-position: -20rem 20rem;
+        background-size: cover;
+    }
+    .vision-wos:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/Illustrations/vision-wos.png) no-repeat;
+        background-position: -8rem -25rem;
+        background-size: 120rem;
+    }
+
+    .align-lg-bottom {
+        vertical-align: bottom !important;
+    }
+    .h-lg-100 {
+        height: 100% !important;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -396,6 +440,11 @@ header ul li a:hover {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .vision-wos:after {
+        background: url(../img/Illustrations/vision-wos.png) no-repeat;
+        background-position: -8rem -27.5rem;
+        background-size: 130rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -411,29 +460,34 @@ header ul li a:hover {
     .projects h2, .projects p {
         text-align: left;
     }
-    .projects h2 {
-        font-size: 5rem;
-    }
-    .we-aim:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url(../img/Illustrations/We\ aim\ to\ achieve_Illustration.png) no-repeat;
-        background-position: bottom left;
-        background-size: cover;
+    .vision-wos:after {
+        background: url(../img/Illustrations/vision-wos.png) no-repeat;
+        background-position: -8rem -25rem;
+        background-size: 130rem;
     }
 }
 @media screen and (min-width: 1450px) {
     .carousel-inner.has-bg {
-        background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
+        background: url(../img/Illustrations/banner1.png) no-repeat;
         background-position: right bottom;
         background-size: 32.5rem;
     }
     .recent-launch figcaption {
         width: 50%;
+    }
+    
+    .projects h2 {
+        font-size: 5rem;
+    }
+    .we-aim:after {
+        background: url(../img/Illustrations/we-aim.png) no-repeat;
+        background-position: -40rem 7.5rem;
+        background-size: 135rem 90rem;
+    }
+    .vision-wos:after {
+        background: url(../img/Illustrations/vision-wos.png) no-repeat;
+        background-position: -9rem -30rem;
+        background-size: 140rem;
     }
 }
 
@@ -454,7 +508,7 @@ header ul li a:hover {
         height: 85%;
     }
     .carousel-inner.has-bg {
-        background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
+        background: url(../img/Illustrations/banner1.png) no-repeat;
         background-position: right bottom;
         background-size: 50rem;
     }

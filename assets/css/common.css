@@ -11,12 +11,18 @@
     padding: 0;
     font-family: 'NeoSans', sans-serif;
 }
+ul li {
+    list-style: none;
+}
 html, body {
     min-height: 100%;
 }
 html, header {
     max-width: 1920px;
     margin: 0 auto;
+}
+button:focus {
+    outline: none !important;
 }
 .btn-primary {
     background-color: #347AF4;
@@ -60,6 +66,25 @@ header ul li a:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/*Owl Thumb CSS*/
+
+.owl-thumbs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.owl-thumb-item {
+    border: none;
+    background: none;
+    padding: 0;
+    opacity: 1;
+}
+/*Owl Thumb CSS*/
+
 @media screen and (min-width: 320px) {
     * {
         font-size: 14px;
@@ -79,7 +104,66 @@ header ul li a:hover {
     .banner {
         height: 75vh;
     }
+    .recent-launch figcaption {
+        width: 80%;
+    }
+    
+    .owl-thumb-item img {
+        width: 5rem;
+        height: auto;
+    }
+    .owl-thumbs {
+        position: static;
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto 0;
+        flex-wrap: wrap;
+    }
+    .recent-launch figcaption {
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .recent-launch .owl-carousel .owl-nav button {
+        bottom: 2.5%;
+    }
+    
+    .recent-launch .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+    .recent-launch .owl-carousel .owl-nav .owl-next {
+        right: 0;
+    }
+    
+    .carousel-overlay:after {
+        content: "";
+        position: absolute;
+        top: 2.5%;
+        right: 2.5%;
+        width: 3rem;
+        height: 3rem;
+        background: url(../img/UI_Icons/Play.svg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 1rem 0 #403f3f;
+        border-radius: 50%;    
+        transition: all 0.3 linear;
+    }
+    .carousel-overlay:hover:after {
+        width: 4rem;
+        height: 4rem;
+    }
 }
+@media screen and (min-width: 768px) {
+    .owl-thumb-item img {
+        width: 7.5rem;
+    }
+    .recent-launch .owl-carousel .owl-nav button {
+        bottom: 2.5%;
+    }
+}
+
 @media screen and (min-width: 991px) {
     .common-section {
         padding: 5rem 1.875rem;
@@ -101,6 +185,50 @@ header ul li a:hover {
     .carousel-item .banner-img {
         max-width: 45rem;
     }
+    .owl-thumbs {
+        width: 65%;
+    }
+    .owl-thumbs {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .recent-launch .owl-carousel .owl-nav button {
+        bottom: 12.5%;
+    }
+    .recent-launch .owl-carousel .owl-nav .owl-prev {
+        left: 5%;
+    }
+    .recent-launch .owl-carousel .owl-nav .owl-next {
+        right: 5%;
+    }
+    
+    .recent-launch figcaption {
+        top: auto;
+        bottom: 50%;
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .recent-launch figcaption {
+        bottom: 25%; 
+        transform: translate(-50%, 0);
+    }
+    
+    .owl-thumb-item img {
+        width: 10rem;
+    }
+    .carousel-overlay:after {
+        right: auto;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media screen and (min-width: 1450px) {
@@ -108,6 +236,9 @@ header ul li a:hover {
         background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
         background-position: right bottom;
         background-size: 32.5rem;
+    }
+    .recent-launch figcaption {
+        width: 50%;
     }
 }
 @media screen and (min-width: 1600px) {

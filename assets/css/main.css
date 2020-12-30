@@ -121,8 +121,16 @@ header .main-container {
     transform: translate(-50%, -50%);
 }
 
-.page-bg .org-txt {
+.org-txt {
     color: #DD911F;
+}
+
+.vision-mission {
+    background: #001231;
+}
+
+.vision-mission p {
+    color: #ffffff;
 }
 
 .title-banner {

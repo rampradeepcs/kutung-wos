@@ -61,7 +61,6 @@ header {
     z-index: 1000;
 }
 
-
 header ul li a {
     display: block;
     color: rgba(255, 255, 255, 0.6);
@@ -93,6 +92,7 @@ header ul li a:hover {
     padding: 0;
     opacity: 1;
 }
+
 .menu-icon {
     width: 100%;
     max-width: 3.5rem;
@@ -102,6 +102,7 @@ header ul li a:hover {
     height: 100%;
     padding: 0.5rem 1rem;
 }
+
 
 /*Owl Thumb CSS*/
 
@@ -182,22 +183,26 @@ header ul li a:hover {
     footer .row>div:nth-child(3) {
         order: 2;
     }
-    .projects .row > div:first-child {  
+    .bring-vision-two .row>div:nth-child(2) {
+        order: 1;
+    }
+    .bring-vision-two .row>div:nth-child(1) {
+        order: 2;
+    }
+    .projects .row>div:first-child {
         border-bottom: 0.1rem solid transparent;
         border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.430287) 21.12%, rgba(255, 255, 255, 0.8) 50.28%, rgba(255, 255, 255, 0.518066) 77.89%, rgba(255, 255, 255, 0) 100%) 30 stretch;
     }
-    .projects .row > div:first-child .proj-wrapper {        
+    .projects .row>div:first-child .proj-wrapper {
         margin-bottom: 2rem;
     }
-    .projects .row > div:last-child .proj-wrapper {        
+    .projects .row>div:last-child .proj-wrapper {
         margin-top: 2rem;
         border: 0;
     }
-
     .projects h2 {
         font-size: 2.5rem;
     }
-
     .projects p {
         font-size: 1rem;
         color: rgba(255, 255, 255, 0.8);
@@ -210,8 +215,11 @@ header ul li a:hover {
         padding: 0;
         width: 100%;
         max-width: 22.5rem;
+        background: url(../img/Our_Core_focus_Ellipse.svg) no-repeat;
         background-color: #010D22;
         transition: all 0.6s ease-in-out;
+        background-position: bottom right;
+        background-size: contain;
     }
     .menu.slideIn {
         right: 0;
@@ -226,13 +234,13 @@ header ul li a:hover {
         font-size: 1.75rem;
         padding: 1.25rem 2rem;
     }
-    .menu-icon > svg:last-child {
+    .menu-icon>svg:last-child {
         display: none;
     }
-    .menu-icon.open > svg:first-child {
+    .menu-icon.open>svg:first-child {
         display: none;
     }
-    .menu-icon.open > svg:last-child {
+    .menu-icon.open>svg:last-child {
         display: block;
     }
     .carousel-item .banner-img {
@@ -241,7 +249,6 @@ header ul li a:hover {
     .carousel-item .banner-img-sm {
         max-width: 27.5rem;
     }
-    
     .title-banner {
         font-size: 1.5rem;
         line-height: 2.5rem;
@@ -252,8 +259,7 @@ header ul li a:hover {
         color: #fff;
         opacity: 0.8;
     }
-    
-    #timer > div {
+    #timer>div {
         background: radial-gradient(69.8% 56.23% at 50.34% 100%, rgba(52, 122, 244, 0.27) 0%, rgba(52, 122, 244, 0) 100%);
         max-width: 20%;
         flex: 1 0 20%;
@@ -290,7 +296,6 @@ header ul li a:hover {
     footer .row>div:nth-child(3) {
         order: 3;
     }
-    
     .title-banner {
         font-size: 2.25rem;
         line-height: 3.5rem;
@@ -298,14 +303,15 @@ header ul li a:hover {
     .banner h5 {
         font-size: 1.5rem;
     }
-    #timer > div {
+    #timer>div {
         padding: 1.75rem 1.5rem;
     }
     .timer-block {
         width: 90%;
         margin: 0 auto;
     }
-    .projects h2, .projects p {
+    .projects h2,
+    .projects p {
         text-align: center;
     }
 }
@@ -356,7 +362,6 @@ header ul li a:hover {
         bottom: 50%;
         width: 65%;
     }
-    
     .proj-wrapper {
         padding: 0 4rem;
         border-bottom: 0;
@@ -365,7 +370,6 @@ header ul li a:hover {
     .projects h2 {
         font-size: 3.75rem;
     }
-
     .projects p {
         font-size: 1.5rem;
     }
@@ -374,7 +378,6 @@ header ul li a:hover {
         vertical-align: middle;
         margin-right: 1rem;
     }
-
     .menu {
         position: static;
         height: auto;
@@ -383,10 +386,9 @@ header ul li a:hover {
         max-width: 100%;
         background-color: transparent;
     }
-    .menu ul li a {        
+    .menu ul li a {
         padding: 1rem 1.5rem;
     }
-    
     .menu ul li {
         display: inline-block;
         vertical-align: middle;
@@ -448,16 +450,17 @@ header ul li a:hover {
 }
 
 @media screen and (min-width: 1200px) {
-    .projects .row > div:first-child {  
+    .projects .row>div:first-child {
         border-bottom: 0;
         border-right: 0.1rem solid transparent;
         border-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.502528) 24.24%, rgba(255, 255, 255, 0.54) 50.31%, rgba(255, 255, 255, 0.486898) 76.33%, rgba(255, 255, 255, 0) 100%) 30 stretch;
     }
-    .projects .row > div:first-child .proj-wrapper, .projects .row > div:last-child .proj-wrapper {
+    .projects .row>div:first-child .proj-wrapper,
+    .projects .row>div:last-child .proj-wrapper {
         margin: 0;
     }
-    
-    .projects h2, .projects p {
+    .projects h2,
+    .projects p {
         text-align: left;
     }
     .vision-wos:after {
@@ -465,7 +468,13 @@ header ul li a:hover {
         background-position: -8rem -25rem;
         background-size: 130rem;
     }
+    .we-aim:after {
+        background: url(../img/Illustrations/We\ aim\ to\ achieve_Illustration.png) no-repeat;
+        background-position: bottom left;
+        background-size: cover;
+    }
 }
+
 @media screen and (min-width: 1450px) {
     .carousel-inner.has-bg {
         background: url(../img/Illustrations/banner1.png) no-repeat;

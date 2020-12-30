@@ -25,7 +25,10 @@
     color: #fff;
 }
 
-.focus-list-body > p, .carousel-item p, .vision-wos p, .we-aim p {
+.focus-list-body>p,
+.carousel-item p,
+.vision-wos p,
+.we-aim p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.15rem;
     line-height: 1.75rem;
@@ -66,7 +69,6 @@ header .main-container {
     min-width: 12.5rem;
     font-size: 1.05rem;
 }
-
 
 #timer>div:last-child {
     margin: 0;
@@ -176,12 +178,24 @@ header .main-container {
     max-width: 1.75rem;
 }
 
-.bring-vision {
+.menu-bottom {
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    left: 0;
+    padding: 3rem 1.75rem;
+}
+
+.bring-vision,
+.bring-vision-two {
     background: #010D22;
 }
 
 .bring-vision p,
-.bring-vision h2 {
+.bring-vision-two p,
+.bring-vision h2,
+.bring-vision-two h2 {
     color: #fff;
 }
 
@@ -301,7 +315,6 @@ header .main-container {
     color: #ffffff;
 }
 
-
 .projects span {
     font-size: inherit;
     color: #347AF4;
@@ -315,6 +328,7 @@ header .main-container {
 .vision-wos {
     background-color: #072800;
 }
+
 .we-aim {
     background-color: #001232;
 }

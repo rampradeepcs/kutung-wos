@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'NeoSans';
-	src: url('../fonts/NeoSans.eot');
-	src: local('☺'), url('../fonts/NeoSans.woff') format('woff'), url('../fonts/NeoSans.ttf') format('truetype'), url('../fonts/NeoSans.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'NeoSans';
+    src: url('../fonts/NeoSans.eot');
+    src: local('☺'), url('../fonts/NeoSans.woff') format('woff'), url('../fonts/NeoSans.ttf') format('truetype'), url('../fonts/NeoSans.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 * {
@@ -11,30 +11,39 @@
     padding: 0;
     font-family: 'NeoSans', sans-serif;
 }
+
 ul li {
     list-style: none;
 }
-html, body {
+
+html,
+body {
     min-height: 100%;
 }
-html, header {
+
+html,
+header {
     max-width: 1920px;
     margin: 0 auto;
 }
+
 button:focus {
     outline: none !important;
 }
+
 .btn-primary {
     background-color: #347AF4;
     border-radius: 0;
     border: 0;
 }
+
 header {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
 }
+
 .logo {
     max-width: 10rem;
 }
@@ -43,6 +52,7 @@ header {
     background-color: #000f28;
     z-index: 1000;
 }
+
 header ul {
     text-align: right;
 }
@@ -66,6 +76,7 @@ header ul li a:hover {
     color: rgba(255, 255, 255, 0.6);
 }
 
+
 /*Owl Thumb CSS*/
 
 .owl-thumbs {
@@ -83,6 +94,8 @@ header ul li a:hover {
     padding: 0;
     opacity: 1;
 }
+
+
 /*Owl Thumb CSS*/
 
 @media screen and (min-width: 320px) {
@@ -107,7 +120,6 @@ header ul li a:hover {
     .recent-launch figcaption {
         width: 80%;
     }
-    
     .owl-thumb-item img {
         width: 5rem;
         height: auto;
@@ -128,14 +140,12 @@ header ul li a:hover {
     .recent-launch .owl-carousel .owl-nav button {
         bottom: 2.5%;
     }
-    
     .recent-launch .owl-carousel .owl-nav .owl-prev {
         left: 0;
     }
     .recent-launch .owl-carousel .owl-nav .owl-next {
         right: 0;
     }
-    
     .carousel-overlay:after {
         content: "";
         position: absolute;
@@ -147,20 +157,33 @@ header ul li a:hover {
         background-size: cover;
         background-position: center;
         box-shadow: 0 0 1rem 0 #403f3f;
-        border-radius: 50%;    
+        border-radius: 50%;
         transition: all 0.3 linear;
     }
     .carousel-overlay:hover:after {
         width: 4rem;
         height: 4rem;
     }
+    footer .row>div:nth-child(2) {
+        order: 3;
+    }
+    footer .row>div:nth-child(3) {
+        order: 2;
+    }
 }
+
 @media screen and (min-width: 768px) {
     .owl-thumb-item img {
         width: 7.5rem;
     }
     .recent-launch .owl-carousel .owl-nav button {
         bottom: 2.5%;
+    }
+    footer .row>div:nth-child(2) {
+        order: 2;
+    }
+    footer .row>div:nth-child(3) {
+        order: 3;
     }
 }
 
@@ -176,7 +199,7 @@ header ul li a:hover {
     }
     .banner {
         height: 100vh;
-    }    
+    }
     .carousel-inner.has-bg {
         background: url(../img/Illustrations/Banner_1\ Illustration.png) no-repeat;
         background-position: right bottom;
@@ -196,7 +219,6 @@ header ul li a:hover {
         justify-content: space-between;
         margin: 0;
     }
-
     .recent-launch .owl-carousel .owl-nav button {
         bottom: 12.5%;
     }
@@ -206,7 +228,6 @@ header ul li a:hover {
     .recent-launch .owl-carousel .owl-nav .owl-next {
         right: 5%;
     }
-    
     .recent-launch figcaption {
         top: auto;
         bottom: 50%;
@@ -216,10 +237,9 @@ header ul li a:hover {
 
 @media screen and (min-width: 1100px) {
     .recent-launch figcaption {
-        bottom: 25%; 
+        bottom: 25%;
         transform: translate(-50%, 0);
     }
-    
     .owl-thumb-item img {
         width: 10rem;
     }
@@ -241,6 +261,7 @@ header ul li a:hover {
         width: 50%;
     }
 }
+
 @media screen and (min-width: 1600px) {
     * {
         font-size: 18px;
@@ -252,6 +273,7 @@ header ul li a:hover {
         height: 100%;
     }
 }
+
 @media screen and (min-width: 1920px) {
     .banner .main-container {
         height: 85%;

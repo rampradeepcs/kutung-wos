@@ -135,11 +135,6 @@ header .main-container {
     font-size: 1.25rem;
 }
 
-.title-banner {
-    font-size: 2.25rem;
-    line-height: 3.5rem;
-}
-
 .media-centre {
     background-color: #051D00;
 }
@@ -363,11 +358,13 @@ header .main-container {
 .we-aim {
     background-color: #001232;
 }
+
 #chManBlockItem.fixed {
     position: fixed;
     right: 1.875rem;
     top: 8rem;
 }
+
 #chManBlockItem.btmFixed {
     position: absolute;
     right: 0;

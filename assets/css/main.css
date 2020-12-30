@@ -18,7 +18,8 @@
     font-weight: 500;
 }
 
-.focus-list-body>h4, .page-bg h2 {
+.focus-list-body>h4,
+.page-bg h2 {
     font-size: 1.75rem;
     line-height: 2rem;
     font-weight: 700;
@@ -124,11 +125,13 @@ header .main-container {
     background: #001231;
 }
 
-.vision-mission p, .last-stanz p:last-child {
+.vision-mission p,
+.last-stanz p:last-child {
     color: #fff;
 }
 
-.last-stanz p:nth-last-child(2), .last-stanz p:last-child {
+.last-stanz p:nth-last-child(2),
+.last-stanz p:last-child {
     font-size: 1.25rem;
 }
 
@@ -174,6 +177,11 @@ header .main-container {
 
 .common-head span {
     font: inherit;
+}
+
+.form-group button {
+    min-width: 12.5rem;
+    padding: 1rem;
 }
 
 .common-head ul li {
@@ -225,6 +233,7 @@ header .main-container {
 .page-bg {
     background: linear-gradient(180.81deg, #051632 0.79%, #000918 99.4%);
 }
+
 
 /* .page-bg h2 {
     color: #ffffff;

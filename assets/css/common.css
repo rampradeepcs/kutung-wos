@@ -69,7 +69,8 @@ header ul li a {
     transition: all 0.3s linear;
 }
 
-header ul li a:hover, .menu ul li a.active {
+header ul li a:hover,
+.menu ul li a.active {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
 }
@@ -105,7 +106,6 @@ header ul li a:hover, .menu ul li a.active {
 
 
 /*Owl Thumb CSS*/
-
 
 .contactMain {
     min-height: calc(100vh - 5rem);
@@ -184,6 +184,12 @@ header ul li a:hover, .menu ul li a.active {
     .carousel-overlay:hover:after {
         width: 4rem;
         height: 4rem;
+    }
+    .odd .row>div:nth-child(1) {
+        order: 2;
+    }
+    .odd .row>div:nth-child(2) {
+        order: 1;
     }
     footer .row>div:nth-child(2) {
         order: 3;
@@ -357,7 +363,7 @@ header ul li a:hover, .menu ul li a.active {
         text-align: center;
     }
     .common-section.page-head {
-        min-height: 32.5rem;        
+        min-height: 32.5rem;
         justify-content: center;
     }
     
@@ -450,7 +456,6 @@ header ul li a:hover, .menu ul li a.active {
     .mh-55 {
         min-height: 55rem;
     }
-    
     .we-aim:after {
         content: "";
         position: absolute;
@@ -473,7 +478,6 @@ header ul li a:hover, .menu ul li a.active {
         background-position: -8rem -25rem;
         background-size: 120rem;
     }
-
     .align-lg-bottom {
         vertical-align: bottom !important;
     }
@@ -489,6 +493,12 @@ header ul li a:hover, .menu ul li a.active {
     
     .chMan-img-block {
         width: 65%;
+    }
+    .odd .row>div:nth-child(1) {
+        order: 1;
+    }
+    .odd .row>div:nth-child(2) {
+        order: 2;
     }
 }
 
@@ -543,7 +553,6 @@ header ul li a:hover, .menu ul li a.active {
     .recent-launch figcaption {
         width: 50%;
     }
-    
     .projects h2 {
         font-size: 5rem;
     }

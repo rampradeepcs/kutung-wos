@@ -526,24 +526,24 @@
                 </div>
                 <div class="col-12 col-md-6 p-0 pl-md-4">
                     <h2 class="contact-head d-none d-lg-block mb-5 font-weight-bold">Contact Us</h2>
-                    <form id="contact-form" action="">
+                    <form id="contact-form" action="javascript:void(0)">
                         <div class="row m-0">
                             <div class="col-12 col-lg-6 pl-0">
                                 <div class="form-group mb-4 pt-4 pt-md-0">
                                     <label class="pl-0" for="name">Name*</label>
-                                    <input type="text" class="form-control pl-0" placeholder="Your full name" id="name">
+                                    <input type="text" class="form-control pl-0" required placeholder="Your full name" id="name">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 pr-0">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="email">Email*</label>
-                                    <input type="email" class="form-control pl-0" placeholder="Your email address" id="email">
+                                    <input type="email" class="form-control pl-0" required placeholder="Your email address" id="email">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 pl-0">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Contact No*</label>
-                                    <input type="text" class="form-control pl-0" placeholder="Your contact no" id="contact">
+                                    <input type="text" class="form-control pl-0" maxlength="10" required placeholder="Your contact no" id="contact">
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6 pr-0">
@@ -572,7 +572,7 @@
                             </div>
                             <div class="col-12 pl-0">
                                 <div class="form-group text-center mt-4">
-                                    <button class="btn btn-primary">Submit</button>
+                                    <button class="btn btn-primary contact-submit-btn">Submit</button>
                                 </div>
                             </div>
                         </div>

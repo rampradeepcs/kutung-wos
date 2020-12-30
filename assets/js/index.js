@@ -30,7 +30,6 @@ function makeTimer() {
         makeTimer();
     
         $('#bannerCarousel').on('slide.bs.carousel', function (e) {
-            console.log(e.from, e.to);
             if(e.from == 0)
                 $(this).find(".carousel-inner").removeClass("has-bg");
             else if (e.to == 0)

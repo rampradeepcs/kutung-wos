@@ -325,11 +325,20 @@ header .main-container {
     color: #ffffff;
 }
 
-.contact input {
+.contact input, .contact input:focus {
     background: transparent;
     border: 0;
     border-bottom: .01rem solid #fff;
     border-radius: inherit;
+    box-shadow: none;
+    color: #fff;
+}
+
+.contact .has-error label {
+    color: red;
+}
+.contact .has-error input {
+    border-color: red;
 }
 
 .projects {

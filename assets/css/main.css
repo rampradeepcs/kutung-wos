@@ -18,7 +18,7 @@
     font-weight: 500;
 }
 
-.focus-list-body>h4 {
+.focus-list-body>h4, .page-bg h2 {
     font-size: 1.75rem;
     line-height: 2rem;
     font-weight: 700;
@@ -28,7 +28,8 @@
 .focus-list-body>p,
 .carousel-item p,
 .vision-wos p,
-.we-aim p {
+.we-aim p,
+.page-bg p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.15rem;
     line-height: 1.75rem;
@@ -51,6 +52,14 @@ header .main-container {
     padding-top: 7rem;
     padding-bottom: 3.5rem;
     position: relative;
+}
+
+.common-section.page-head {
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+    background: url(../img/Chairman_Message/bg.svg) no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
 }
 
 .banner .main-container {
@@ -108,15 +117,19 @@ header .main-container {
 }
 
 .org-txt {
-    color: #DD911F;
+    color: #DD911F !important;
 }
 
 .vision-mission {
     background: #001231;
 }
 
-.vision-mission p {
-    color: #ffffff;
+.vision-mission p, .last-stanz p:last-child {
+    color: #fff;
+}
+
+.last-stanz p:nth-last-child(2), .last-stanz p:last-child {
+    font-size: 1.25rem;
 }
 
 .title-banner {
@@ -213,7 +226,7 @@ header .main-container {
     background: linear-gradient(180.81deg, #051632 0.79%, #000918 99.4%);
 }
 
-.page-bg h2 {
+/* .page-bg h2 {
     color: #ffffff;
     font-size: 2.5rem;
 }
@@ -221,7 +234,7 @@ header .main-container {
 .page-bg p {
     color: rgba(255, 255, 255, .6);
     font-size: 1rem;
-}
+} */
 
 .social-icon {
     max-width: 2.5rem;

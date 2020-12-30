@@ -69,7 +69,7 @@ header ul li a {
     transition: all 0.3s linear;
 }
 
-header ul li a:hover {
+header ul li a:hover, .menu ul li a.active {
     text-decoration: none;
     color: rgba(255, 255, 255, 1);
 }
@@ -112,6 +112,9 @@ header ul li a:hover {
     }
     .common-section {
         padding: 4rem 1.25rem;
+    }
+    header {
+        padding: 0 1.25rem;
     }
     footer {
         padding: 0 1.25rem;
@@ -281,6 +284,12 @@ header ul li a:hover {
     .vision-wos figure img {
         transform: scale(1.65) translate(8%, -12.5%);
     }
+    .common-section.page-head {
+        padding-top: 7rem;
+        padding-bottom: 3.5rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -314,11 +323,18 @@ header ul li a:hover {
     .projects p {
         text-align: center;
     }
+    .common-section.page-head {
+        min-height: 32.5rem;        
+        justify-content: center;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .common-section {
         padding: 5rem 1.875rem;
+    }
+    header {
+        padding: 0 1.875rem;
     }
     footer {
         padding: 0 1.875rem;
@@ -467,11 +483,6 @@ header ul li a:hover {
         background: url(../img/Illustrations/vision-wos.png) no-repeat;
         background-position: -8rem -25rem;
         background-size: 130rem;
-    }
-    .we-aim:after {
-        background: url(../img/Illustrations/We\ aim\ to\ achieve_Illustration.png) no-repeat;
-        background-position: bottom left;
-        background-size: cover;
     }
 }
 

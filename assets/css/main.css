@@ -133,20 +133,24 @@ header .main-container {
 .media-centre {
     background-color: #051D00;
 }
+
 .media-centre-item {
     padding: 2rem 1.25rem;
     background-color: #1E2D20;
 }
+
 .media-centre-item h6 {
     color: #fff;
     font-size: 1.25rem;
     line-height: 2rem;
 }
+
 .media-centre-item p {
     color: #fff;
     font-size: 1rem;
     line-height: 1.5rem;
 }
+
 .btn-slider {
     background-color: transparent;
     border: 0.1rem solid #fff;
@@ -155,22 +159,27 @@ header .main-container {
     font-weight: 500;
     transition: all 0.3s linear;
 }
+
 .btn-slider:hover {
     background-color: #1CA800;
     border-color: #1CA800;
 }
+
 .common-head span {
     font: inherit;
 }
+
 .common-head ul li {
-    padding: 0.75rem;    
+    padding: 0.75rem;
     border: 0.1rem solid #1CA800;
     cursor: pointer;
     box-shadow: inset 0 0 1.25rem 0 rgba(28, 168, 0, 0.4);
 }
+
 .common-head ul li.disabled {
     opacity: 0.5;
 }
+
 .arrow-icon {
     max-width: 1.75rem;
 }
@@ -214,6 +223,7 @@ header .main-container {
     box-shadow: inset 0px 0px 20px rgba(52, 122, 244, 0.4);
     background: linear-gradient(93.17deg, rgba(3, 9, 23, 0.6) 0%, rgba(3, 9, 23, 0) 100%);
 }
+
 .recent-launch {
     background-color: #111;
 }
@@ -236,6 +246,7 @@ header .main-container {
     font-size: 1.25rem;
     font-weight: 600;
 }
+
 .recent-launch figcaption p {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
@@ -249,22 +260,24 @@ header .main-container {
     position: absolute;
     z-index: 10;
 }
+
 .owl-nav button.disabled {
     opacity: 0.4;
 }
-
 
 .recent-launch .owl-prev span {
     display: none;
 }
 
-.owl-thumb-item {    
+.owl-thumb-item {
     outline: 0 !important;
     border: 0.1rem solid transparent;
 }
+
 .owl-thumb-item.active {
     border-color: #347AF4;
 }
+
 .carousel-overlay {
     position: absolute;
     width: 100%;
@@ -273,6 +286,25 @@ header .main-container {
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
     cursor: pointer;
+}
+
+.contact {
+    background: linear-gradient(180.81deg, #051632 0.79%, #00081F 99.4%);
+}
+
+.contact-head {
+    color: #ffffff;
+}
+
+.contact input {
+    background: transparent;
+    border: 0;
+    border-bottom: .01rem solid #fff;
+    border-radius: inherit;
+}
+
+.contact label {
+    color: #ffffff;
 }
 
 @media screen and (max-width: 575px) {

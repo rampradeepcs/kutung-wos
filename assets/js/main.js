@@ -20,13 +20,27 @@ function makeTimer() {
 
         $("#days").html("<h4 class='m-0 mb-3 common-head'>"+days+"</h4><span>Days</span>");
         $("#hours").html("<h4 class='m-0 mb-3 common-head'>"+hours+"</h4><span>Hours</span>");
-        $("#minutes").html("<h4 class='m-0 mb-3 common-head'>"+minutes+"</h4><span>Minutes</span>");
-        $("#seconds").html("<h4 class='m-0 mb-3 common-head'>"+seconds+"</h4><span>Seconds</span>");		
+        $("#minutes").html("<h4 class='m-0 mb-3 common-head'>"+minutes+"</h4><span>Mins</span>");
+        $("#seconds").html("<h4 class='m-0 mb-3 common-head'>"+seconds+"</h4><span>Secs</span>");		
 
 }
 
 $(document).ready(function() {
     
+    $(".menu-icon").on("click", function() {
+        if($(".menu").hasClass("slideIn") == false) {
+            $(".menu").addClass("slideIn");
+            setTimeout(function () {                
+                $(".menu-icon").addClass("open");
+            }, 300);
+        } else {
+            $(".menu").removeClass("slideIn");
+            setTimeout(function () {                
+                $(".menu-icon").removeClass("open");
+            }, 300);
+        }
+    });
+
     makeTimer();
     $('.carousel').carousel({
         interval: false,

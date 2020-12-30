@@ -303,6 +303,20 @@ header .main-container {
     border-radius: inherit;
 }
 
+.projects {
+    background: linear-gradient(270deg, #002A72 -58.51%, #000F28 100%);
+    color: #ffffff;
+}
+
+.projects span {
+    font-size: 5rem;
+    color: #347AF4;
+}
+
+.projects h2 {
+    font-size: 5rem;
+}
+
 .contact label {
     color: #ffffff;
 }

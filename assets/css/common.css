@@ -108,7 +108,7 @@ header ul li a:hover, .menu ul li a.active {
 
 
 .contactMain {
-    height: calc(100vh - 5rem);
+    min-height: calc(100vh - 5rem);
 }
 
 @media screen and (min-width: 320px) {

@@ -42,9 +42,6 @@ $(document).ready(function() {
     });
 
     makeTimer();
-    $('.carousel').carousel({
-        interval: false,
-    });
 
     $('#bannerCarousel').on('slide.bs.carousel', function (e) {
         console.log(e.from, e.to);

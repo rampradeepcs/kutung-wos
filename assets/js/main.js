@@ -42,12 +42,14 @@ $(document).ready(function() {
             }, 500);
     });
 
+    /*Media Centre Carousel*/
     var mcOwl = $('.media-centre .owl-carousel').owlCarousel({
         loop: false,
         margin: 20,
         nav: true,
         dots: false,
         autoHeight: true,
+        thumbs: false,
         responsive:{
             0: {
                 items:1
@@ -79,9 +81,7 @@ $(document).ready(function() {
         if(items == item) {
             $(".customNextBtn").addClass('disabled');
         }
-    });
-
-    
+    });    
 
     $('.customNextBtn').click(function() {
         mcOwl.trigger('next.owl.carousel');
@@ -89,5 +89,21 @@ $(document).ready(function() {
 
     $('.customPrevBtn').click(function() {
         mcOwl.trigger('prev.owl.carousel', [300]);
-    })
+    });
+    /*Media Centre Carousel*/
+
+    /*Recent Launch Carousel*/
+    var rcoOwl = $('.recent-launch .owl-carousel');
+    rcoOwl.owlCarousel({
+        loop: false,
+        items: 1,
+        nav: true,
+        dots: false,
+        thumbs: true,
+        thumbImage: true,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item',
+        navText: ['<div class="arrow-icon"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"><path d="M20 24L12 16L20 8" stroke="#347AF4" stroke-width="1.5"/></svg></div>', '<div class="arrow-icon"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"><path d="M12 24L20 16L12 8" stroke="#347AF4" stroke-width="1.5"/></svg></div>']
+    });
+    /*Recent Launch Carousel*/
 });

@@ -63,9 +63,9 @@
             <h4 class="m-0 common-head">Chairman's Message</h4>
         </section>
         <!--Ladies & Gentleman-->
-        <section class="w-100 common-section">
-            <div class="row m-0 mb-5">
-                <div class="col-lg-8 p-0 pr-lg-4">
+        <section class="w-100 common-section" id="chManBlock">
+            <div class="row m-0 mb-5 position-relative">
+                <div class="col-md-8 p-0 pr-md-4">
                     <h2 class="mb-3">Ladies and Gentleman</h2>
                     <p class="m-0 mb-4">Good day! With God in mind, I pray that your families and friends are in good health in this very tumultuous times –Covid 19 has really taught us that nature is all powerful and am fortunate that this realization dawned into me deeply
                         a decade back. I have taken the liberty to share my most innate thoughts behind my mission, a project that shares and reflects nature in its most pristine form … that is coming into fruition now – It is a long story that virtually
@@ -111,8 +111,17 @@
                         in partnership with nature – How will Span housing be… With nature providing such joy and many health benefits, we as planners are leveraging designs that accentuate the environment and that will be ingrained in all our spaces. We
                         can hope that beyond making a healthier and happier world, we can also prompt a more ethical relationship to nature.</p>
                 </div>
-                <div class="col-lg-4 p-0 pl-lg-4">
-    
+                <div class="col-md-4 p-0 pl-md-4" id="chManBlockItem">
+                    <div class="ml-md-auto chMan-img-block">
+                        <figure class="w-100 m-0">
+                            <img class="w-100" src="assets/img/Chairman_Message/WOS_Chairman.png" alt="Chairman Image">
+                        </figure>
+                        <div class="w-100 chMan-img-block-content">
+                            <h4 class="m-0 mb-3">Chandrahasan Senthil Kumar</h4>
+                            <h5 class="m-0 mb-3">Chairman</h5>
+                            <p class="m-0 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -260,6 +269,28 @@
     <!-- Script Dependencies -->
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script type="text/javascript">
+        $(window).on("scroll", function() {
+            
+            let sTop = $(this).scrollTop();
+            let eleTop = $("#chManBlock").position().top;
+            let eleHeight = $("#chManBlock").innerHeight();
+            let iHeight = $(".chMan-img-block").innerHeight();
+            console.log(sTop, eleTop, eleHeight, eleTop + eleHeight)
+            
+            if(sTop > (eleTop + 200) && (sTop < eleTop + eleHeight - iHeight - 260)) {
+                $("#chManBlockItem").addClass("fixed");
+                $("#chManBlockItem").removeClass("btmFixed");
+            } else if(sTop > eleTop + eleHeight - iHeight - 260) {
+                $("#chManBlockItem").removeClass("fixed");
+                $("#chManBlockItem").addClass("btmFixed");
+            } else {
+                $("#chManBlockItem").removeClass("fixed");
+            }
+        });
+    </script>
 </body>
 
 </html>

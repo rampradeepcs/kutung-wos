@@ -299,6 +299,30 @@ header ul li a:hover, .menu ul li a.active {
         padding-top: 7rem;
         padding-bottom: 3.5rem;
     }
+    .chMan-img-block figure {
+        background: linear-gradient(180deg, rgba(31, 37, 48, 0) 0%, #1F2530 100%);
+        padding: 2rem 2.75rem 0;
+    }
+    .chMan-img-block-content {
+        background-color: #1F2530;
+        padding: 1.5rem 1.25rem;
+    }
+    
+    .chMan-img-block-content h4 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2.25rem;
+    }
+    
+    .chMan-img-block-content h5 {
+        color: rgba(255,255,255,0.8);
+        font-size: 1.35rem;
+        font-weight: 600;
+    }
+    
+    .chMan-img-block {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -335,6 +359,10 @@ header ul li a:hover, .menu ul li a.active {
     .common-section.page-head {
         min-height: 32.5rem;        
         justify-content: center;
+    }
+    
+    .chMan-img-block {
+        width: 80%;
     }
 }
 
@@ -409,6 +437,7 @@ header ul li a:hover, .menu ul li a.active {
         padding: 0;
         width: auto;
         max-width: 100%;
+        background: none;
         background-color: transparent;
     }
     .menu ul li a {
@@ -456,6 +485,10 @@ header ul li a:hover, .menu ul li a.active {
     }
     .bring-vision-two .row>div:nth-child(1) {
         order: 1;
+    }
+    
+    .chMan-img-block {
+        width: 65%;
     }
 }
 

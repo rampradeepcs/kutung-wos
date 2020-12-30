@@ -345,6 +345,17 @@ header .main-container {
 .we-aim {
     background-color: #001232;
 }
+#chManBlockItem.fixed {
+    position: fixed;
+    right: 1.875rem;
+    top: 8rem;
+}
+#chManBlockItem.btmFixed {
+    position: absolute;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
 
 @media screen and (max-width: 575px) {
     .our-core {

@@ -525,12 +525,12 @@
                 </div>
                 <div class="col-12 col-md-6 p-0 pl-md-4">
                     <h2 class="contact-head d-none d-md-block mb-5 font-weight-bold">Contact Us</h2>
-                    <form action="/action_page.php">
+                    <form id="contact-form" action="">
                         <div class="row m-0">
                             <div class="col-12 col-md-6 pl-0">
                                 <div class="form-group mb-4 pt-4 pt-md-0">
                                     <label class="pl-0" for="name">Name*</label>
-                                    <input type="text" class="form-control pl-0" placeholder="Your full name" id="email">
+                                    <input type="text" class="form-control pl-0" placeholder="Your full name" id="name">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pl-0">
@@ -542,31 +542,36 @@
                             <div class="col-12 col-md-6 pl-0">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Contact No*</label>
-                                    <input type="number" class="form-control pl-0" placeholder="Your contact no" id="contact">
+                                    <input type="text" class="form-control pl-0" placeholder="Your contact no" id="contact">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pl-0">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="location">Location</label>
-
+                                    <select class="custom-select">
+                                        <option selected>Select Your Location</option>
+                                        <option value="1">Chennai</option>
+                                        <option value="2">Trichy</option>
+                                        <option value="3">Madurai</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pl-0">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Budget</label>
-                                    <input type="number" class="form-control pl-0" placeholder="Your budget (INR Lakhs)" id="contact">
+                                    <input type="text" class="form-control pl-0" placeholder="Your budget (INR Lakhs)" id="contact">
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6 pl-0">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Carpet Area</label>
-                                    <input type="number" class="form-control pl-0" placeholder="Type Something" id="contact">
+                                    <input type="type" class="form-control pl-0" placeholder="Type Something" id="contact">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pl-0">
                                 <div class="form-group mb-4">
-                                    <button class="btn btn-primary w-100">Submit</button>
+                                    <button class="btn btn-primary w-100 form-submit">Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -628,6 +633,7 @@
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/OwlCarouselThumbs.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

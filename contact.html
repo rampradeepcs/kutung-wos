@@ -17,57 +17,99 @@
 </head>
 
 <body>
-    <section class="contact">
-        <div class="row">
-            <div class="col-6">
-                <img class="w-100" src="assets/img/Contact Us.png" alt="Contact Image">
-            </div>
-            <div class="col-6">
-                <h3 class="">Contact Us</h3>
-                <form action="/action_page.php">
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" placeholder="Your full name" id="email">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" placeholder="Your email address" id="email">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="number">Contact No</label>
-                                <input type="number" class="form-control" placeholder="Your contact no" id="contact">
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="location">Location</label>
-
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="number">Budget</label>
-                                <input type="number" class="form-control" placeholder="Your budget (INR Lakhs)" id="contact">
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="number">Carpet Area</label>
-                                <input type="number" class="form-control" placeholder="Your budget (INR Lakhs)" id="contact">
-                            </div>
-                        </div>
+    <header class="w-100 pt-3">
+        <div class="w-100 mx-auto main-container">
+            <div class="row m-0">
+                <div class="col-6 pl-0">
+                    <figure class="m-0 p-0 logo">
+                        <img class="w-100" src="assets/img/Logo.svg" alt="Logo">
+                    </figure>
+                </div>
+                <div class="col-6 pr-0 d-flex align-items-center text-lg-right d-lg-none ml-auto">
+                    <div class="menu-icon">
+                        <svg width="100%" height="100%" viewBox="0 0 16 12" fill="none">
+                            <path d="M0 0H16V2H0V0ZM4 5H16V7H4V5ZM9 10H16V12H9V10Z" fill="white"/>
+                        </svg>
+                        <svg width="100%" height="100%" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 6L6 18" stroke="white" stroke-width="2"/>
+                            <path d="M6 6L18 18" stroke="white" stroke-width="2"/>
+                        </svg>
                     </div>
-                </form>
+                </div>
+                <div class="d-block d-lg-flex align-items-center justify-content-end col-6 pr-0 ml-auto menu">
+                    <h4 class="m-0 d-lg-none common-head">Menu</h4>
+                    <ul class="m-0 p-0">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="chairman-msg.html" class="active">Chairman's Message</a>
+                        </li>
+                        <li>
+                            <a href="javscript:void(0)">Contact Us</a>
+                        </li>
+                    </ul>
+                    <div class="menu-bottom">
+                        <p>“Humanity is exalted not because we are so far above other living creatures, but because knowing them well elevates the very concept of life in us.”</p>
+                        <span class="org-txt">-Chanrahasan Senthil Kumar</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
+    <main class="w-100 contactMain">
+        <section class="w-100 h-100 common-section contact">
+            <div class="row m-0 h-100 align-items-center">
+                <div class="col-lg-6 p-0 pr-lg-4">
+                    <img class="w-100" src="assets/img/Contact Us.png" alt="Contact Image">
+                </div>
+                <div class="col-lg-6 p-0 pl-lg-4">
+                    <h3 class="m-0 mb-4 common-head">Contact Us</h3>
+                    <form action="/action_page.php">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" placeholder="Your full name" id="email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" placeholder="Your email address" id="email">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="number">Contact No</label>
+                                    <input type="number" class="form-control" placeholder="Your contact no" id="contact">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="location">Location</label>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="number">Budget</label>
+                                    <input type="number" class="form-control" placeholder="Your budget (INR Lakhs)" id="contact">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="number">Carpet Area</label>
+                                    <input type="number" class="form-control" placeholder="Your budget (INR Lakhs)" id="contact">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
     <!--Footer-->
     <footer class="footer-bg w-100 px-0 py-3">
         <div class="row m-0 align-items-center">

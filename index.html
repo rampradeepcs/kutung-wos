@@ -63,7 +63,7 @@
 
     <main class="w-100">
         <!--Banner-->
-        <section class="w-100 common-section banner">
+        <section class="w-100 common-section banner has-bg">
             <div class="w-100 mx-auto main-container">
                 <div id="bannerCarousel" class="w-100 h-100 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -89,7 +89,7 @@
                             </svg>
                         </li>
                     </ol>
-                    <div class="h-100 carousel-inner d-flex align-items-center has-bg">
+                    <div class="h-100 carousel-inner d-flex align-items-center">
                         <div class="carousel-item active">
                             <div class="row m-0">
                                 <div class="col-md-8 col-lg-4 p-0 pr-lg-4 mb-4 mb-lg-0">
@@ -97,7 +97,7 @@
                                     <button class="btn btn-primary">Register Now</button>
                                 </div>
                                 <div class="col-12 d-lg-none p-0 pl-lg-4 text-center">
-                                    <img class="w-100 banner-img banner-img-sm" src="assets/img/Illustrations/banner1.png" alt="Banner1 Image">
+                                    <img class="w-100 banner-img" src="assets/img/Illustrations/banner1.png" alt="Banner1 Image">
                                 </div>
                             </div>
                         </div>
@@ -478,8 +478,8 @@
         <!--Bringing Our Vision-->
         <section class="w-100 common-section bring-vision">
             <h2 class="mb-4 d-lg-none">Bringing our vision to the community</h2>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+            <div class="row m-0 align-items-center">
+                <div class="col-lg-6 pl-0 pr-lg-4">
                     <h2 class="mb-4 d-none d-lg-block">Bringing our vision to the community</h2>
                     <p class="m-0 mb-4 mt-4 mt-lg-0">• At Span we will take deep steps to help educate our beloved homeowners on our patented proprietary evolving concepts.</p>
                     <p class="m-0 mb-4">• Every home is different in every respect of the word - from the type of building material to design and what it means to our homeowner partner.</p>
@@ -493,7 +493,7 @@
                     </p>
                     <p class="m-0 mb-4">• We investigate incentives and spend our own money to help offset some of the upfront costs of a particular nature strategy.</p>
                 </div>
-                <div class="col-lg-6 p-0">
+                <div class="col-lg-6 p-0 pl-lg-4">
                     <img class="w-100" src="assets/img/Chairman_Message/Offerings.png" alt="Our Vision Image">
                 </div>
             </div>
@@ -501,11 +501,11 @@
         <!--Bringing Our Vision-->
         <!--Bringing Our Vision part 2-->
         <section class="w-100 common-section bring-vision-two">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
+            <div class="row m-0 align-items-center">
+                <div class="col-lg-6 pl-0 pr-lg-4">
                     <img class="w-100" src="assets/img/Chairman_Message/Last Stanza.png" alt="Our Vision 2 Image">
                 </div>
-                <div class="col-lg-6 mt-4 m-lg-0">
+                <div class="col-lg-6 mt-4 m-lg-0 p-0 pl-lg-4">
                     <p class="m-0 mb-4">• We have deep dived into life-cycle cost analysis of a strategy to estimate the overall costs for our home partners and offer a 20-year maintenance program at the virtually the least cost ever possible.</p>
                     <p class="m-0 mb-4">• Span is all about best practices for energy and water conservation. We are incorporating several revolutionary concepts from 1000 year back to now and used nature design will be reflected throughout all our proposed projects.</p>
                     <p class="m-0 mb-4">• We are offsetting costs with radical renewable systems in every utility area as possible.</p>
@@ -550,12 +550,14 @@
                             <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="location">Location</label>
-                                    <select class="custom-select">
-                                        <option selected>Select Your Location</option>
-                                        <option value="1">Chennai</option>
-                                        <option value="2">Trichy</option>
-                                        <option value="3">Madurai</option>
-                                    </select>
+                                    <div class="w-100 cus-select">
+                                        <input type="text" class="form-control pl-0" placeholder="Select your location" readonly>
+                                        <ul class="w-100 m-0 custom-select-options">
+                                            <li class="option">Location 1</li>
+                                            <li class="option">Location 2</li>
+                                            <li class="option">Location 3</li>
+                                        <ul>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">

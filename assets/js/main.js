@@ -51,4 +51,16 @@ $(document).ready(function() {
             e.preventDefault();
         }
     });
+
+    $(".cus-select input").on("click", function() {
+        
+    });
+});
+
+$(window).on("scroll", function() {
+    if($(this).scrollTop() > 100) {
+        $("header").addClass("scrolled");
+    } else {
+        $("header").removeClass("scrolled");
+    }
 });

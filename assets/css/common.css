@@ -57,8 +57,11 @@ header {
 }
 
 header {
-    background-color: #000f28;
+    background-color: transparent;
     z-index: 1000;
+}
+header.scrolled {
+    background-color: #000f28;
 }
 
 header ul li a {
@@ -110,6 +113,29 @@ header ul li a:hover,
 
 .contactMain {
     min-height: calc(100vh - 5rem);
+}
+
+.cus-select {
+    position: relative;
+}
+.cus-select input {
+    background: url(../img/UI_Icons/Down\ Arrow.svg) no-repeat;
+    background-position: right 1rem center;
+}
+.custom-select-options {
+    position: absolute;
+    top: calc(1.5em + .75rem + 2px);
+    left: 0; 
+    display: none;
+}
+.custom-select-options li {
+    padding: 0.75rem 1rem;
+    background-color: rgba(0,0,0,0.75);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.custom-select-options li:hover {
+    background-color: rgb(82 82 82 / 25%);
 }
 
 @media screen and (min-width: 320px) {
@@ -478,10 +504,27 @@ header ul li a:hover,
     .timer-block {
         width: 75%;
     }
-    .carousel-inner.has-bg {
+    .banner.has-bg:after {
         background: url(../img/Illustrations/banner1.png) no-repeat;
-        background-position: right bottom;
-        background-size: 40rem;
+        background-position: right -25% bottom -25%;
+        background-size: 48rem;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .banner.has-bg:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30vh;
+        background-image: linear-gradient(to top, #001231, rgba(0,18,49,0));
+        z-index: 1;
     }
     .carousel-item .banner-img {
         max-width: 45rem;
@@ -573,10 +616,10 @@ header ul li a:hover,
     .h-lg-100 {
         height: 100% !important;
     }
-    .bring-vision-two .row>div:nth-child(2) {
+    .bring-vision .row>div:nth-child(2) {
         order: 2;
     }
-    .bring-vision-two .row>div:nth-child(1) {
+    .bring-vision .row>div:nth-child(1) {
         order: 1;
     }
     .chMan-img-block {
@@ -636,7 +679,7 @@ header ul li a:hover,
 }
 
 @media screen and (min-width: 1450px) {
-    .carousel-inner.has-bg {
+    .banner.has-bg:after {
         background: url(../img/Illustrations/banner1.png) no-repeat;
         background-position: right bottom;
         background-size: 32.5rem;
@@ -681,7 +724,7 @@ header ul li a:hover,
     .banner .main-container {
         height: 85%;
     }
-    .carousel-inner.has-bg {
+    .banner.has-bg:after {
         background: url(../img/Illustrations/banner1.png) no-repeat;
         background-position: right bottom;
         background-size: 50rem;

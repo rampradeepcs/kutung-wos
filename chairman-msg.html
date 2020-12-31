@@ -112,11 +112,11 @@
                         We can hope that beyond making a healthier and happier world, we can also prompt a more ethical relationship to nature.</p>
                 </div>
                 <div class="col-md-4 p-0 pl-md-4" id="chManBlockItem">
-                    <div class="ml-md-auto chMan-img-block">
-                        <figure class="w-100 m-0">
+                    <div class="mb-5 mb-md-0 ml-md-auto chMan-img-block">
+                        <figure class="m-0 text-center text-sm-left">
                             <img class="w-100" src="assets/img/Chairman_Message/WOS_Chairman.png" alt="Chairman Image">
                         </figure>
-                        <div class="w-100 chMan-img-block-content">
+                        <div class="chMan-img-block-content">
                             <h4 class="m-0 mb-3">Chandrahasan Senthil Kumar</h4>
                             <h5 class="m-0 mb-3">Chairman</h5>
                             <p class="m-0 mb-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
@@ -278,21 +278,22 @@
 
     <script type="text/javascript">
         $(window).on("scroll", function() {
-
-            let sTop = $(this).scrollTop();
-            let eleTop = $("#chManBlock").position().top;
-            let eleHeight = $("#chManBlock").innerHeight();
-            let iHeight = $(".chMan-img-block").innerHeight();
-            console.log(sTop, eleTop, eleHeight, eleTop + eleHeight)
-
-            if (sTop > (eleTop + 200) && (sTop < eleTop + eleHeight - iHeight - 260)) {
-                $("#chManBlockItem").addClass("fixed");
-                $("#chManBlockItem").removeClass("btmFixed");
-            } else if (sTop > eleTop + eleHeight - iHeight - 260) {
-                $("#chManBlockItem").removeClass("fixed");
-                $("#chManBlockItem").addClass("btmFixed");
-            } else {
-                $("#chManBlockItem").removeClass("fixed");
+            
+            if($(this).outerWidth() > 767) {
+                let sTop = $(this).scrollTop();
+                let eleTop = $("#chManBlock").position().top;
+                let eleHeight = $("#chManBlock").innerHeight();
+                let iHeight = $(".chMan-img-block").innerHeight();
+                
+                if (sTop > (eleTop + 200) && (sTop < eleTop + eleHeight - iHeight - 240)) {
+                    $("#chManBlockItem").addClass("fixed");
+                    $("#chManBlockItem").removeClass("btmFixed");
+                } else if (sTop > eleTop + eleHeight - iHeight - 260) {
+                    $("#chManBlockItem").removeClass("fixed");
+                    $("#chManBlockItem").addClass("btmFixed");
+                } else {
+                    $("#chManBlockItem").removeClass("fixed");
+                }
             }
         });
     </script>

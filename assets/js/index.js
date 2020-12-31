@@ -42,7 +42,7 @@ function makeTimer() {
         var mcOwl = $('.media-centre .owl-carousel').owlCarousel({
             loop: false,
             margin: 20,
-            nav: true,
+            nav: false,
             dots: false,
             autoHeight: true,
             thumbs: false,

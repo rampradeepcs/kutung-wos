@@ -100,6 +100,7 @@ header ul li a:hover,
     position: relative;
     z-index: 999;
     margin-left: auto;
+    cursor: pointer;
     height: 100%;
     padding: 0.5rem 1rem;
 }
@@ -150,32 +151,18 @@ header ul li a:hover,
         height: auto;
     }
     .owl-thumbs {
-        position: static;
-        display: flex;
-        width: 80%;
-        align-items: center;
-        justify-content: center;
-        margin: 1rem auto 0;
-        flex-wrap: wrap;
+        display: none;
     }
     .recent-launch figcaption {
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .recent-launch .owl-carousel .owl-nav button {
-        bottom: 2.5%;
-    }
-    .recent-launch .owl-carousel .owl-nav .owl-prev {
-        left: 0;
-    }
-    .recent-launch .owl-carousel .owl-nav .owl-next {
-        right: 0;
+        width: 100%;
+        margin-top: 1rem;
     }
     .carousel-overlay:after {
         content: "";
         position: absolute;
-        top: 2.5%;
-        right: 2.5%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         width: 3rem;
         height: 3rem;
         background: url(../img/UI_Icons/Play.svg) no-repeat;
@@ -330,6 +317,46 @@ header ul li a:hover,
     .chMan-img-block {
         width: 100%;
     }
+    .recent-launch .owl-carousel .owl-nav {
+        margin: 1.5rem 0 0;
+    }
+    .recent-launch .owl-carousel .owl-nav button {
+        padding: 0.75rem !important;
+        border: 0.1rem solid #347AF4;
+        cursor: pointer;
+        box-shadow: inset 0 0 1rem 0 rgba(52, 122, 244, 0.4);
+    }
+    .recent-launch .owl-carousel .owl-nav button:first-child {
+        margin-right: 1.5rem;
+    }
+    .recent-launch .owl-carousel .item figure {
+        position: relative;
+    }
+    #chManBlockItem {
+        order: 1;
+    }    
+    #chManBlock > .row > div:first-child {
+        order: 2;
+    }
+    .chMan-img-block figure, .chMan-img-block > div {
+        width: 100%;
+    }
+    .chMan-img-block figure img {
+        max-width: 15rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .chMan-img-block {
+        display: flex;
+    }
+    .chMan-img-block figure, .chMan-img-block > div {
+        width: auto;
+    }
+    .chMan-img-block figure {
+        background-color: #1F2530;
+        padding: 1.5rem 1.5rem 0;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -373,6 +400,59 @@ header ul li a:hover,
     .carousel-item .banner-img-sm {
         max-width: 27.5rem;
     }
+    .recent-launch figcaption {
+        position: absolute;
+        left: 50%;
+        text-align: center;        
+        top: 70%;
+        width: auto;
+        margin: 0;
+        transform: translate(-50%, -50%);
+    }
+    .owl-thumbs {
+        position: static;
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem auto 0;
+        flex-wrap: wrap;
+    }
+    .recent-launch .owl-carousel .owl-nav button {
+        position: absolute;
+        z-index: 10;        
+        margin: 0 !important;
+        padding: 0.5rem !important;
+    }
+    
+    .recent-launch .owl-carousel .owl-nav button {
+        bottom: 2.5%;
+    }
+    .recent-launch .owl-carousel .owl-nav .owl-prev {
+        left: 0;
+    }
+    .recent-launch .owl-carousel .owl-nav .owl-next {
+        right: 0;
+    }
+    .carousel-overlay:after {
+        top: 40%; 
+    }
+    #chManBlockItem {
+        order: 2;
+    }    
+    #chManBlock > .row > div:first-child {
+        order: 1;
+    }
+    .chMan-img-block figure {
+        background: linear-gradient(180deg, rgba(31, 37, 48, 0) 0%, #1F2530 100%);
+        padding: 2rem 2.75rem 0;
+    }
+    .chMan-img-block {
+        display: block;
+    }
+    #chManBlockItem.fixed {
+        right: 1.25rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -385,6 +465,9 @@ header ul li a:hover,
     }
     header {
         padding: 0 1.875rem;
+    }
+    #chManBlockItem.fixed {
+        right: 1.875rem;
     }
     footer {
         padding: 0 1.875rem;
@@ -424,9 +507,8 @@ header ul li a:hover,
         right: 5%;
     }
     .recent-launch figcaption {
-        top: auto;
-        bottom: 50%;
         width: 65%;
+        top: 60%;
     }
     .proj-wrapper {
         padding: 0 4rem;

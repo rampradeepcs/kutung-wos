@@ -125,7 +125,6 @@ header .main-container {
     background: #001231;
 }
 
-.vision-mission p,
 .last-stanz p:last-child {
     color: #fff;
 }
@@ -208,8 +207,12 @@ header .main-container {
     background: #010D22;
 }
 
+.vision-mission p,
 .bring-vision p,
-.bring-vision-two p,
+.bring-vision-two p {
+    color: rgba(255, 255, 255, .8);
+}
+
 .bring-vision h2,
 .bring-vision-two h2 {
     color: #fff;
@@ -301,7 +304,8 @@ header .main-container {
     color: #ffffff;
 }
 
-.contact input, .contact input:focus {
+.contact input,
+.contact input:focus {
     background: transparent;
     border: 0;
     border-bottom: .01rem solid #fff;
@@ -313,6 +317,7 @@ header .main-container {
 .contact .has-error label {
     color: red;
 }
+
 .contact .has-error input {
     border-color: red;
 }

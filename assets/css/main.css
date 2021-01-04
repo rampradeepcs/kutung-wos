@@ -244,6 +244,7 @@ header .main-container {
 } */
 
 .social-icon {
+    display: block;
     max-width: 2.5rem;
     padding: 0.35rem 0.5rem;
     border: 0.1rem solid #347AF4;

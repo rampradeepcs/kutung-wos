@@ -25,7 +25,7 @@
             <div class="row m-0">
                 <div class="col-6 pl-0">
                     <figure class="m-0 p-0 logo">
-                        <img class="w-100" src="assets/img/Logo.svg" alt="Logo">
+                        <a href="index.html"><img class="w-100" src="assets/img/Logo.svg" alt="Logo"></a>
                     </figure>
                 </div>
                 <div class="col-6 pr-0 d-flex align-items-center text-lg-right d-lg-none ml-auto">
@@ -351,7 +351,7 @@
                             <img class="w-100" src="assets/img/media-centre/2.png" alt="Media Centre Image 2">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India.</p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
                             <img class="w-100" src="assets/img/media-centre/3.png" alt="Media Centre Image 3">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India.</p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -381,7 +381,7 @@
                             <img class="w-100" src="assets/img/media-centre/2.png" alt="Media Centre Image 2">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India.</p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -391,7 +391,7 @@
                             <img class="w-100" src="assets/img/media-centre/3.png" alt="Media Centre Image 3">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India.</p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -527,30 +527,30 @@
                 </div>
                 <div class="col-12 col-lg-6 p-0 pl-lg-4">
                     <h2 class="contact-head d-none d-lg-block mb-5 font-weight-bold">Contact Us</h2>
-                    <form id="contact-form" action="javascript:void(0)">
+                    <form id="contact-form" class="js-form">
                         <div class="row m-0">
                             <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
                                 <div class="form-group mb-4 mt-4 mt-lg-0 pt-4 pt-md-0">
                                     <label class="pl-0" for="name">Name*</label>
-                                    <input type="text" class="form-control pl-0" required placeholder="Your full name" id="name">
+                                    <input type="text" pattern="[a-zA-Z]*" class="form-control pl-0" name="name" required placeholder="Your full name" id="name">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
                                 <div class="form-group mb-4 mt-0 mt-md-4 mt-lg-0 pt-4 pt-md-0">
                                     <label class="pl-0" for="email">Email*</label>
-                                    <input type="email" class="form-control pl-0" required placeholder="Your email address" id="email">
+                                    <input type="email" class="form-control pl-0" name="email" required placeholder="Your email address" id="email">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Contact No*</label>
-                                    <input type="text" class="form-control pl-0" maxlength="10" required placeholder="Your contact no" id="contact">
+                                    <input type="text" class="form-control pl-0"  name="number" maxlength="10" required placeholder="Your contact no" id="contact">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
                                 <div class="form-group mb-4 mt-0 mt-md-4 mt-lg-0 pt-4 pt-md-0">
                                     <label class="pl-0" for="email">Location</label>
-                                    <input type="email" class="form-control pl-0" required placeholder="Enter Location" id="location">
+                                    <input type="email" class="form-control pl-0"  name="location" placeholder="Enter Location" id="location">
                                 </div>
                             </div>
                             <!-- <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
@@ -569,23 +569,25 @@
                             <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Budget</label>
-                                    <input type="text" class="form-control pl-0" placeholder="Your budget (INR Lakhs)" id="budget">
+                                    <input type="text" class="form-control pl-0"  name="budget" placeholder="Your budget (INR Lakhs)" id="budget">
                                 </div>
                             </div>
 
                             <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Carpet Area</label>
-                                    <input type="type" class="form-control pl-0" placeholder="Type Something" id="carpet_area">
+                                    <input type="type" class="form-control pl-0" name="area" placeholder="Type Something" id="carpet_area">
                                 </div>
                             </div>
                             <div class="col-12 p-0">
                                 <div class="form-group text-left mt-4">
-                                    <button class="btn btn-primary contact-submit-btn">Submit</button>
+                                    <button type="submit" class="btn btn-primary contact-submit-btn">Submit</button>
                                     <!-- <button class="btn btn-primary contact-submit-btn disabled">Clear</button> -->
                                 </div>
                             </div>
                         </div>
+                        <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
+                        <div class="error-message">We're sorry, but something went wrong</div>
                     </form>
                 </div>
             </div>
@@ -597,7 +599,7 @@
         <div class="row m-0 align-items-center">
             <div class="col-6 col-md-3 pl-0">
                 <figure class="m-0 p-0 logo">
-                    <img class="w-100" src="assets/img/Logo.svg" alt="Logo">
+                    <a href="index.html"><img class="w-100" src="assets/img/Logo.svg" alt="Logo"></a>
                 </figure>
             </div>
             <div class="col-12 col-md-6 mt-3 m-md-0 p-0 px-md-3 text-center">

@@ -53,7 +53,20 @@ $(document).ready(function() {
     });
 
     $(".cus-select input").on("click", function() {
-        
+        if($(this).siblings("ul").hasClass("enable") == false)
+            $(this).siblings("ul").addClass("enable");
+        else
+            $(this).siblings("ul").removeClass("enable");
+    });
+
+    $(document).on("click", function() {
+        let a = $(this)[0].activeElement;
+        if($(a).hasClass("custom-select-value") == false)
+            $(".custom-select-options").removeClass("enable");
+    });
+    $(".custom-select-options li").on("click", function() {
+        $(this).parent("ul").siblings("input").val($(this).text());
+        $(this).parent("ul").removeClass("enable");
     });
 });
 

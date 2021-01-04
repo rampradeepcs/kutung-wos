@@ -285,7 +285,7 @@
                 let eleHeight = $("#chManBlock").innerHeight();
                 let iHeight = $(".chMan-img-block").innerHeight();
                 
-                if (sTop > (eleTop + 200) && (sTop < eleTop + eleHeight - iHeight - 240)) {
+                if (sTop > eleTop && (sTop < eleTop + eleHeight - iHeight - 200)) {
                     $("#chManBlockItem").addClass("fixed");
                     $("#chManBlockItem").removeClass("btmFixed");
                 } else if (sTop > eleTop + eleHeight - iHeight - 260) {

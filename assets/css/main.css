@@ -247,8 +247,12 @@ header .main-container {
     max-width: 2.5rem;
     padding: 0.35rem 0.5rem;
     border: 0.1rem solid #347AF4;
+    transition: all 0.3s ease-in-out;
     box-shadow: inset 0px 0px 1.25rem rgba(52, 122, 244, 0.4);
     background: linear-gradient(93.17deg, rgba(3, 9, 23, 0.6) 0%, rgba(3, 9, 23, 0) 100%);
+}
+.social-icon:hover {
+    background-color: #347AF4;
 }
 
 .recent-launch {
@@ -348,7 +352,8 @@ header .main-container {
 
 #chManBlockItem.fixed {
     position: fixed;
-    top: 8rem;
+    top: 6rem;
+    max-width: calc(33.3% - 1.225rem);
 }
 
 #chManBlockItem.btmFixed {

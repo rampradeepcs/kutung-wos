@@ -74,13 +74,16 @@ function makeTimer() {
         mcOwl.on('changed.owl.carousel', function(event) {
             var items = event.item.count;
             var item = event.item.index;
-            var pages     = event.page.count;
-            var size      = event.page.size; 
+            var pages = event.page.count;
+            var size = event.page.size; 
             console.log(items, item, pages, size);
             if(item < 1) {
                 $(".customPrevBtn").addClass('disabled');
+            } else if (item > 0) {
+                $(".customPrevBtn").removeClass('disabled');
+                $(".customNextBtn").removeClass('disabled');
             }
-            if(items == item) {
+            if(items == item + size) {
                 $(".customNextBtn").addClass('disabled');
             }
         });    

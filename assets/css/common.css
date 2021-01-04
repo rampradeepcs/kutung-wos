@@ -108,6 +108,11 @@ header ul li a:hover,
     padding: 0.5rem 1rem;
 }
 
+.success-message,
+.error-message{
+  display: none;
+  margin-top: 2rem;
+}
 
 /*Owl Thumb CSS*/
 

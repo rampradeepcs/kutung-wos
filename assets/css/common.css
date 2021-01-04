@@ -512,8 +512,8 @@ header ul li a:hover,
     }
     .banner.has-bg:after {
         background: url(../img/Illustrations/banner1.png) no-repeat;
-        background-position: right -25% bottom -25%;
-        background-size: 48rem;
+        background-position: right -10vw bottom -10vh;
+        background-size: 70vw;
         content: "";
         position: absolute;
         top: 0;
@@ -686,9 +686,8 @@ header ul li a:hover,
 
 @media screen and (min-width: 1450px) {
     .banner.has-bg:after {
-        background: url(../img/Illustrations/banner1.png) no-repeat;
-        background-position: right bottom;
-        background-size: 32.5rem;
+        background-position: right -5vw bottom -5vh;
+        background-size: 60vw;
     }
     .recent-launch figcaption {
         width: 50%;
@@ -731,8 +730,7 @@ header ul li a:hover,
         height: 85%;
     }
     .banner.has-bg:after {
-        background: url(../img/Illustrations/banner1.png) no-repeat;
-        background-position: right bottom;
-        background-size: 50rem;
+        background-position: right -5vw bottom -5vh;
+        background-size: 60vw;
     }
 }

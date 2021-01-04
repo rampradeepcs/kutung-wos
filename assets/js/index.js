@@ -111,4 +111,8 @@ function makeTimer() {
             navText: ['<div class="arrow-icon"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"><path d="M20 24L12 16L20 8" stroke="#347AF4" stroke-width="1.5"/></svg></div>', '<div class="arrow-icon"><svg width="100%" height="100%" viewBox="0 0 32 32" fill="none"><path d="M12 24L20 16L12 8" stroke="#347AF4" stroke-width="1.5"/></svg></div>']
         });
         /*Recent Launch Carousel*/
+
+        let a = new Date();
+        let b = a.getFullYear();
+        $(".cpYear").text(b);
     });

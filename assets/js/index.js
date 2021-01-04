@@ -1,7 +1,7 @@
 function makeTimer() {
 
     //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
-        var endTime = new Date("1 January 2021 10:00:00 GMT+01:00");			
+        var endTime = new Date("10 January 2021 10:00:00 GMT+01:00");			
             endTime = (Date.parse(endTime) / 1000);
     
             var now = new Date();
@@ -29,9 +29,9 @@ function makeTimer() {
     
         makeTimer();
 
-        $(".carousel").carousel({
-            interval: false
-        });
+        // $(".carousel").carousel({
+        //     interval: false
+        // });
     
         $('#bannerCarousel').on('slide.bs.carousel', function (e) {
             console.log(e.from, e.to);

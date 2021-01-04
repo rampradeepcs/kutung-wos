@@ -14,17 +14,18 @@ $(document).ready(function() {
         }
     });
 
-    $(".contact-submit-btn").on("click", function(e) {
-        e.preventDefault();
+    var validateForm = function() {
         let inputs = $("#contact-form").find(".form-control");
         
         inputs.each((key, obj) => {
             let input = document.getElementById($(obj).attr("id"));
+
             if($(obj).attr("required") == 'required' && $(obj).val() == '' && !input.checkValidity()) {
                 $(obj).parent(".form-group").addClass("has-error");
             } else {
                 $(obj).parent(".form-group").removeClass("has-error");
             }
+
             if($(obj).attr("id") == 'email') {
                 let ptrn = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
                 if(ptrn.test(input.value)) {
@@ -42,7 +43,21 @@ $(document).ready(function() {
                 }
             }
         });
+    };
+
+    $(".contact-submit-btn").on("click", function(e) {        
+        e.preventDefault();
+        validateForm();
     });
+
+    // $(".contact-submit-btn:last-child").on("click", function() {
+    //     e.preventDefault();
+    //     let inputs = $("#contact-form").find(".form-control");
+        
+    //     inputs.each((key, obj) => {
+    //         $(obj).val('');
+    //     });
+    // });
 
     $("#contact").on("keydown", function(e) {
         let val = $(this).val();

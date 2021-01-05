@@ -18,7 +18,8 @@
     font-weight: 500;
 }
 
-.focus-list-body>h4 {
+.focus-list-body>h4,
+.page-bg h2 {
     font-size: 1.75rem;
     line-height: 2rem;
     font-weight: 700;
@@ -26,7 +27,10 @@
 }
 
 .focus-list-body>p,
-.carousel-item p {
+.carousel-item p,
+.vision-wos p,
+.we-aim p,
+.page-bg p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.15rem;
     line-height: 1.75rem;
@@ -52,6 +56,14 @@ header .main-container {
     position: relative;
 }
 
+.common-section.page-head {
+    padding-top: 7rem;
+    padding-bottom: 3.5rem;
+    background: url(../img/Chairman_Message/bg.svg) no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+}
+
 .banner .main-container {
     display: flex;
     align-items: center;
@@ -63,26 +75,10 @@ header .main-container {
     color: #fff;
 }
 
-.banner h5 {
-    font-size: 1.5rem;
-    letter-spacing: 0.15rem;
-    color: #fff;
-    opacity: 0.8;
-}
-
 .banner .btn-primary {
     padding: 0.75rem 1.5rem;
     min-width: 12.5rem;
     font-size: 1.05rem;
-}
-
-#timer>div {
-    background: radial-gradient(69.8% 56.23% at 50.34% 100%, rgba(52, 122, 244, 0.27) 0%, rgba(52, 122, 244, 0) 100%);
-    /* filter: blur(20px); */
-    max-width: 20%;
-    flex: 1 0 20%;
-    padding: 1.75rem 1.5rem;
-    margin-right: 5%;
 }
 
 #timer>div:last-child {
@@ -122,13 +118,21 @@ header .main-container {
     transform: translate(-50%, -50%);
 }
 
-.page-bg .org-txt {
-    color: #DD911F;
+.org-txt {
+    color: #DD911F !important;
 }
 
-.title-banner {
-    font-size: 2.25rem;
-    line-height: 3.5rem;
+.vision-mission {
+    background: #001231;
+}
+
+.last-stanz p:last-child {
+    color: #fff;
+}
+
+.last-stanz p:nth-last-child(2),
+.last-stanz p:last-child {
+    font-size: 1.25rem;
 }
 
 .media-centre {
@@ -170,6 +174,11 @@ header .main-container {
     font: inherit;
 }
 
+.form-group button {
+    min-width: 12.5rem;
+    padding: 1rem;
+}
+
 .common-head ul li {
     padding: 0.75rem;
     border: 0.1rem solid #1CA800;
@@ -185,12 +194,28 @@ header .main-container {
     max-width: 1.75rem;
 }
 
-.bring-vision {
+.menu-bottom {
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, .8);
+    left: 0;
+    padding: 3rem 1.75rem;
+}
+
+.bring-vision,
+.bring-vision-two {
     background: #010D22;
 }
 
+.vision-mission p,
 .bring-vision p,
-.bring-vision h2 {
+.bring-vision-two p {
+    color: rgba(255, 255, 255, .8);
+}
+
+.bring-vision h2,
+.bring-vision-two h2 {
     color: #fff;
 }
 
@@ -201,13 +226,15 @@ header .main-container {
 .footer-bg p {
     color: #989898;
     align-items: center;
+    font-size: 0.9rem;
 }
 
 .page-bg {
     background: linear-gradient(180.81deg, #051632 0.79%, #000918 99.4%);
 }
 
-.page-bg h2 {
+
+/* .page-bg h2 {
     color: #ffffff;
     font-size: 2.5rem;
 }
@@ -215,28 +242,23 @@ header .main-container {
 .page-bg p {
     color: rgba(255, 255, 255, .6);
     font-size: 1rem;
-}
+} */
 
 .social-icon {
-    max-width: 2rem;
-    padding: .1rem .3rem;
+    display: block;
+    max-width: 2.5rem;
+    padding: 0.35rem 0.5rem;
     border: 0.1rem solid #347AF4;
-    box-shadow: inset 0px 0px 20px rgba(52, 122, 244, 0.4);
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0px 0px 1.25rem rgba(52, 122, 244, 0.4);
     background: linear-gradient(93.17deg, rgba(3, 9, 23, 0.6) 0%, rgba(3, 9, 23, 0) 100%);
+}
+.social-icon:hover {
+    background-color: #347AF4;
 }
 
 .recent-launch {
     background-color: #111;
-}
-
-.recent-launch figcaption {
-    position: absolute;
-    left: 50%;
-    text-align: center;
-}
-
-.recent-launch .owl-carousel .item {
-    position: relative;
 }
 
 .recent-launch figcaption * {
@@ -251,15 +273,6 @@ header .main-container {
 .recent-launch figcaption p {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
-}
-
-.recent-launch .owl-carousel .owl-nav button {
-    padding: 0.5rem !important;
-    border: 0.1rem solid #347AF4;
-    cursor: pointer;
-    box-shadow: inset 0 0 1rem 0 rgba(52, 122, 244, 0.4);
-    position: absolute;
-    z-index: 10;
 }
 
 .owl-nav button.disabled {
@@ -297,11 +310,23 @@ header .main-container {
     color: #ffffff;
 }
 
-.contact input {
-    background: transparent;
+.contact input,
+.contact input:focus,
+.contact input[readonly] {
+    background-color: transparent;
     border: 0;
     border-bottom: .01rem solid #fff;
     border-radius: inherit;
+    box-shadow: none;
+    color: #fff;
+}
+
+.contact .has-error label {
+    color: red;
+}
+
+.contact .has-error input {
+    border-color: red;
 }
 
 .projects {
@@ -310,16 +335,38 @@ header .main-container {
 }
 
 .projects span {
-    font-size: 5rem;
+    font-size: inherit;
     color: #347AF4;
-}
-
-.projects h2 {
-    font-size: 5rem;
+    font-weight: 600;
 }
 
 .contact label {
     color: #ffffff;
+}
+
+.vision-wos {
+    background-color: #072800;
+}
+
+.we-aim {
+    background-color: #001232;
+}
+
+#chManBlockItem.fixed {
+    position: fixed;
+    top: 6rem;
+    max-width: calc(33.3% - 1.225rem);
+}
+
+#chManBlockItem.btmFixed {
+    position: absolute;
+    right: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.banner.has-bg {
+    background: linear-gradient(111.34deg, #021B44 0%, #461B00 100%);
 }
 
 @media screen and (max-width: 575px) {
@@ -328,7 +375,7 @@ header .main-container {
         background-color: #000F28;
     }
     /* RP */
-    .justify-content-end.ml-auto.nav-item {
+    /*.justify-content-end.ml-auto.nav-item {
         position: fixed !important;
         padding: 0;
         width: 100%;
@@ -359,6 +406,6 @@ header .main-container {
     .banner .carousel-indicators {
         margin: 0;
         bottom: 2%;
-    }
+    }*/
     /* RP */
 }

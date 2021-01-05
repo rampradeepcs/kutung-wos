@@ -20,26 +20,42 @@
 
 <body>
 
-    <header class="w-100 px-0 pt-3">
-        <div class="mx-auto main-container">
+    <header class="w-100 pt-3">
+        <div class="w-100 mx-auto main-container">
             <div class="row m-0">
-                <div class="col-4 pl-0">
+                <div class="col-6 pl-0">
                     <figure class="m-0 p-0 logo">
-                        <img class="w-100" src="assets/img/Logo.svg" alt="Logo">
+                        <a href="index.html"><img class="w-100" src="assets/img/Logo.svg" alt="Logo"></a>
                     </figure>
                 </div>
-                <div class="d-flex align-items-center justify-content-end col-6 pr-0 ml-auto nav-item">
+                <div class="col-6 pr-0 d-flex align-items-center text-lg-right d-lg-none ml-auto">
+                    <div class="menu-icon">
+                        <svg width="100%" height="100%" viewBox="0 0 16 12" fill="none">
+                            <path d="M0 0H16V2H0V0ZM4 5H16V7H4V5ZM9 10H16V12H9V10Z" fill="white"/>
+                        </svg>
+                        <svg width="100%" height="100%" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 6L6 18" stroke="white" stroke-width="2"/>
+                            <path d="M6 6L18 18" stroke="white" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="d-block d-lg-flex align-items-center justify-content-end col-6 pr-0 ml-auto menu">
+                    <h4 class="m-0 d-lg-none common-head">Menu</h4>
                     <ul class="m-0 p-0">
                         <li>
-                            <a href="javscript:void(0)">Home</a>
+                            <a href="javscript:void(0)" class="active">Home</a>
                         </li>
                         <li>
                             <a href="chairman-msg.html">Chairman's Message</a>
                         </li>
                         <li>
-                            <a href="javscript:void(0)">Contact Us</a>
+                            <a href="contact.html">Contact Us</a>
                         </li>
                     </ul>
+                    <div class="d-lg-none menu-bottom">
+                        <p>“Humanity is exalted not because we are so far above other living creatures, but because knowing them well elevates the very concept of life in us.”</p>
+                        <span class="org-txt"> - Edward O. Wilson</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -47,8 +63,8 @@
 
     <main class="w-100">
         <!--Banner-->
-        <section class="w-100 common-section banner">
-            <div class="mx-auto main-container">
+        <section class="w-100 common-section banner has-bg">
+            <div class="w-100 mx-auto main-container">
                 <div id="bannerCarousel" class="w-100 h-100 carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#bannerCarousel" data-slide-to="0" class="active">
@@ -73,19 +89,19 @@
                             </svg>
                         </li>
                     </ol>
-                    <div class="h-100 carousel-inner d-flex align-items-center has-bg">
+                    <div class="h-100 carousel-inner d-flex align-items-center">
                         <div class="carousel-item active">
                             <div class="row m-0">
-                                <div class="col-12 col-md-8 col-lg-4 p-0 pr-lg-4">
+                                <div class="col-md-8 col-lg-4 p-0 pr-lg-4 mb-4 mb-lg-0">
                                     <h4 class="m-0 mb-5 title-banner">Building communities interwoven with emotive love, creativity, nature and cutting edge technology</h4>
                                     <button class="btn btn-primary">Register Now</button>
                                 </div>
-                                <!-- <div class="col-lg-8 p-0 pl-lg-4">
-                                    <img class="w-100" src="assets/img/Illustrations/Banner_1 Illustration.png" alt="Banner1 Image">
-                                </div> -->
+                                <div class="col-12 d-lg-none p-0 pl-lg-4 text-center">
+                                    <img class="w-100 banner-img" src="assets/img/Illustrations/banner1.png" alt="Banner1 Image">
+                                </div>
                             </div>
                         </div>
-                        <div class="carousel-item text-center">
+                        <div class="carousel-item text-md-center">
                             <h5 class="m-0 mb-4">The wait is almost over.</h5>
                             <h4 class="m-0 mb-5 common-head">We are launching the World of Span</h4>
                             <div class="mb-5 timer-block">
@@ -100,13 +116,13 @@
                         </div>
                         <div class="carousel-item">
                             <div class="row m-0 align-items-center">
-                                <div class="col-lg-4 p-0 pr-lg-4">
+                                <div class="col-lg-4 p-0 pr-lg-4 mb-4 mb-lg-0">
                                     <h4 class="m-0 mb-4 common-head">We aim to achieve</h4>
                                     <p class="m-0 mb-3">Responsible sound ecological architecture with cutting edge blended into individual structures and reflecting nature.</p>
                                     <p class="m-0">Breaking architectural stereotypes from building materials, energy and technology to bring spectacular multi-faceted spaces still connected to nature.</p>
                                 </div>
-                                <div class="d-none d-lg-block col-lg-8 p-0 pl-lg-4 text-right">
-                                    <img class="w-100 banner-img" src="assets/img/Illustrations/Banner_3 Illustration.svg" alt="Banner 3 Image">
+                                <div class="col-lg-8 p-0 pl-lg-4 text-center text-lg-right">
+                                    <img class="w-100 banner-img" src="assets/img/Illustrations/banner3.svg" alt="Banner 3 Image">
                                 </div>
                             </div>
                         </div>
@@ -115,24 +131,96 @@
             </div>
         </section>
         <!--Banner-->
-        <!--Projects-->
-        <section class="w-100 common-section projects">
-            <div class="w-100 row m-0">
-                <div class="col-12 col-sm-6">
+
+        <!--Vision Mission-->
+        <section class="w-100 common-section vision-mission">
+            <div class="w-100 row m-0 align-items-center">
+                <div class="col-lg-4 p-0 pl-lg-0">
                     <div class="">
-                        <h2><span>150+ </span> Projects</h2>
-                        <p>in the infra / construction space plus</p>
+                        <h2 class="common-head my-4">Our Vision</h2>
+                        <p>Building communities interwoven with emotive love, creativity, nature and cutting edge technology</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-lg-4">
                     <div class="">
-                        <h2><span>1100+ </span>Projects</h2>
-                        <p>in the engineering and technology space (with global partners)</p>
+                        <img src="assets/img/earth.png" class="w-100" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0 pr-lg-0">
+                    <div class="">
+                        <h2 class="common-head my-4">Our Mission</h2>
+                        <p>World of Span is embarking on an enduring mission to fundamentally bring about change on how communities are built by reconnecting them with nature. World of Span envisions to achieving this by leveraging breakthrough technologies,
+                            innovating infrastructure materials, processes & methodologies.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-6 text-lg-center p-0 mt-3 m-sm-0 mx-lg-auto">
+                    <p>“Humanity is exalted not because we are so far above other living creatures, but because knowing them well elevates the very concept of life in us.”</p>
+                    <span class="org-txt">- Edward O. Wilson</span>
+                </div>
+            </div>
+        </section>
+        <!--Vision Mission-->
+
+        <!--Vision of WOS-->
+        <section class="w-100 position-relative d-lg-table common-section mh-55 vision-wos">
+            <div class="row m-0 d-lg-table-cell align-lg-bottom h-lg-100">
+                <div class="col-12 d-lg-none p-0">
+                    <figure class="m-0 p-0 pb-5 p-lg-0">
+                        <img class="w-100" src="assets/img/Illustrations/vision-wos.png" alt="Visionaries of World of Span">
+                    </figure>
+                </div>
+                <div class="col-12 col-lg-5 p-0">
+                    <h4 class="m-0 mb-5 common-head">Visionaries of World of Span</h4>
+                    <p class="m-0 mb-4">World of Span is a place where ideas, ambitious concepts, and professionals congregate to create a difference for your new home of love.</p>
+                    <p class="m-0">We are a conglomerate of highly experienced and accomplished Infrastructure & Tech Stalwarts -from across the globe; with a cumulative experience in excess of 1000+ years. Group is endowed with many Patents, know-hows / IPRs and are
+                        currently under global patent process.</p>
+                </div>
+            </div>
+        </section>
+        <!--Vision of WOS-->
+
+        <!--We aim-->
+        <section class="w-100 position-relative common-section mh-55 we-aim">
+            <div class="row m-0">
+                <div class="d-none d-lg-block col-lg-7 p-0"></div>
+                <div class="col-12 col-lg-5 ml-lg-auto p-0">
+                    <h4 class="m-0 mb-5 common-head">We aim to achieve</h4>
+                    <p class="m-0 mb-4">Responsible sound ecological architecture with cutting edge blended into individual structures and reflecting nature.</p>
+                    <p class="m-0 mb-4">Breaking architectural stereotypes from building materials, energy and technology to bring spectacular multi-faceted spaces still connected to nature.</p>
+                    <p class="m-0">Design that will conjure emotive images in the mind of the home-owner, the immersive multi-layered works of nature in the housing that bring out inner happiness and love.</p>
+                </div>
+                <div class="col-12 d-lg-none p-0">
+                    <figure class="m-0 p-0">
+                        <img class="w-100" src="assets/img/Illustrations/we-aim.png" alt="We Aim to Acheive">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!--We aim-->
+
+        <!--Projects-->
+        <section class="w-100 common-section projects">
+            <div class="row mx-auto main-container">
+                <div class="col-12 col-xl-6 p-0">
+                    <div class="proj-wrapper">
+                        <h2 class="m-0 mb-3">
+                            <span>150+ </span> Projects
+                        </h2>
+                        <p class="m-0">in the infra / construction space plus</p>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-6 p-0">
+                    <div class="proj-wrapper">
+                        <h2 class="m-0 mb-3">
+                            <span>1100+ </span>Projects
+                        </h2>
+                        <p class="m-0">in the engineering and technology space (with global partners)</p>
                     </div>
                 </div>
             </div>
         </section>
         <!--Projects-->
+
         <!--Our Core-->
         <section class="w-100 common-section our-core">
             <h4 class="m-0 mb-5 common-head">Our Core focus areas</h4>
@@ -229,7 +317,7 @@
         <section class="w-100 common-section media-centre">
             <h4 class="m-0 mb-5 d-flex align-items-center common-head">
                 <span>Media Centre</span>
-                <ul class="d-flex align-items-center p-0 m-0 ml-auto">
+                <ul class="d-none d-md-flex align-items-center p-0 m-0 ml-auto">
                     <li class="mr-4 customPrevBtn disabled">
                         <div class="arrow-icon">
                             <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none">
@@ -263,7 +351,7 @@
                             <img class="w-100" src="assets/img/media-centre/2.png" alt="Media Centre Image 2">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India. Today, it is used </p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -273,7 +361,7 @@
                             <img class="w-100" src="assets/img/media-centre/3.png" alt="Media Centre Image 3">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India. Today, it is used </p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -293,7 +381,7 @@
                             <img class="w-100" src="assets/img/media-centre/2.png" alt="Media Centre Image 2">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India. Today, it is used </p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
@@ -303,16 +391,34 @@
                             <img class="w-100" src="assets/img/media-centre/3.png" alt="Media Centre Image 3">
                         </figure>
                         <h6 class="m-0 mb-3">This Ranchi startup is making the transition to renewable </h6>
-                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy projects in India. Today, it is used </p>
+                        <p class="m-0 mb-4">Ranchi-based clean energy startup SafEarth has facilitated a net investment of over Rs 100 crore into renewable energy...</p>
                         <button class="btn btn-primary btn-slider">Read More</button>
                     </div>
                 </div>
             </div>
+            <h4 class="m-0 mt-4 d-flex d-md-none align-items-center common-head">
+                <ul class="d-flex align-items-center p-0 m-0">
+                    <li class="mr-4 customPrevBtn disabled">
+                        <div class="arrow-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none">
+                                <path d="M20 24L12 16L20 8" stroke="#1CA800" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                    </li>
+                    <li class="customNextBtn">
+                        <div class="arrow-icon">
+                            <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none">
+                                <path d="M12 24L20 16L12 8" stroke="#1CA800" stroke-width="1.5"/>
+                            </svg>
+                        </div>
+                    </li>
+                </ul>
+            </h4>
         </section>
         <!--Media Centre-->
 
         <!--Recent Launch-->
-        <section class="w-100 common-section recent-launch">
+        <section class="d-none w-100 common-section recent-launch">
             <h4 class="m-0 mb-5 common-head">Our Recent Launch</h4>
             <div class="owl-carousel">
                 <div class="item">
@@ -371,10 +477,11 @@
 
         <!--Bringing Our Vision-->
         <section class="w-100 common-section bring-vision">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2 class="mb-4">Bringing our vision to the community</h2>
-                    <p class="m-0 mb-4">• At Span we will take deep steps to help educate our beloved homeowners on our patented proprietary evolving concepts.</p>
+            <h2 class="mb-4 d-lg-none">Bringing our vision to the community</h2>
+            <div class="row m-0 align-items-center">
+                <div class="col-lg-6 pl-0 pr-lg-4">
+                    <h2 class="mb-4 d-none d-lg-block">Bringing our vision to the community</h2>
+                    <p class="m-0 mb-4 mt-4 mt-lg-0">• At Span we will take deep steps to help educate our beloved homeowners on our patented proprietary evolving concepts.</p>
                     <p class="m-0 mb-4">• Every home is different in every respect of the word - from the type of building material to design and what it means to our homeowner partner.</p>
                     <p class="m-0 mb-4">• World of Span will showcase lead workshops for our home partners design homes that reflect their human experience from cradle to grave. </p>
                     <p class="m-0 mb-4">• We review our revolutionary nature design strategies and how they can help meet specific homeowner goals. To achieve a successful nature design project, we have specialized teams for strong coordination between the various groups
@@ -386,19 +493,19 @@
                     </p>
                     <p class="m-0 mb-4">• We investigate incentives and spend our own money to help offset some of the upfront costs of a particular nature strategy.</p>
                 </div>
-                <div class="col-lg-6 p-0">
-                    <img class="w-100" src="assets/img/Chairman Message/Offerings.png" alt="Our Vision Image">
+                <div class="col-lg-6 p-0 pl-lg-4">
+                    <img class="w-100" src="assets/img/Chairman_Message/Offerings.png" alt="Our Vision Image">
                 </div>
             </div>
         </section>
         <!--Bringing Our Vision-->
         <!--Bringing Our Vision part 2-->
-        <section class="w-100 common-section bring-vision">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img class="w-100" src="assets/img/Chairman Message/Last Stanza.png" alt="Our Vision 2 Image">
+        <section class="w-100 common-section bring-vision-two">
+            <div class="row m-0 align-items-center">
+                <div class="col-lg-6 pl-0 pr-lg-4">
+                    <img class="w-100" src="assets/img/Chairman_Message/Last Stanza.png" alt="Our Vision 2 Image">
                 </div>
-                <div class="col-lg-6 mt-4 m-lg-0">
+                <div class="col-lg-6 mt-4 m-lg-0 p-0 pl-lg-4">
                     <p class="m-0 mb-4">• We have deep dived into life-cycle cost analysis of a strategy to estimate the overall costs for our home partners and offer a 20-year maintenance program at the virtually the least cost ever possible.</p>
                     <p class="m-0 mb-4">• Span is all about best practices for energy and water conservation. We are incorporating several revolutionary concepts from 1000 year back to now and used nature design will be reflected throughout all our proposed projects.</p>
                     <p class="m-0 mb-4">• We are offsetting costs with radical renewable systems in every utility area as possible.</p>
@@ -412,53 +519,75 @@
         </section>
         <!--Bringing Our Vision part 2 -->
         <!--Contact Us-->
-        <section class="contact py-5">
-            <div class="row m-0">
-                <div class="col-6">
+        <section class="contact common-section py-5">
+            <h2 class="contact-head col-12 text-md-center d-lg-none mb-5 font-weight-bold">Contact Us</h2>
+            <div class="row m-0 align-items-center">
+                <div class="col-12 col-lg-6 p-0 pr-lg-4">
                     <img class="w-100" src="assets/img/Contact Us.png" alt="Contact Image">
                 </div>
-                <div class="col-6">
-                    <h2 class="contact-head mb-5 font-weight-bold">Contact Us</h2>
-                    <form action="/action_page.php">
+                <div class="col-12 col-lg-6 p-0 pl-lg-4">
+                    <h2 class="contact-head d-none d-lg-block mb-5 font-weight-bold">Contact Us</h2>
+                    <form id="contact-form" class="js-form">
                         <div class="row m-0">
-                            <div class="col-6 pl-0">
-                                <div class="form-group mb-4">
+                            <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
+                                <div class="form-group mb-4 mt-4 mt-lg-0 pt-4 pt-md-0">
                                     <label class="pl-0" for="name">Name*</label>
-                                    <input type="text" class="form-control pl-0" placeholder="Your full name" id="email">
+                                    <input type="text" pattern="[a-zA-Z]*" class="form-control pl-0" name="name" required placeholder="Your full name" id="name">
                                 </div>
                             </div>
-                            <div class="col-6 pl-0">
-                                <div class="form-group mb-4">
+                            <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
+                                <div class="form-group mb-4 mt-0 mt-md-4 mt-lg-0 pt-4 pt-md-0">
                                     <label class="pl-0" for="email">Email*</label>
-                                    <input type="email" class="form-control pl-0" placeholder="Your email address" id="email">
+                                    <input type="email" class="form-control pl-0" name="email" required placeholder="Your email address" id="email">
                                 </div>
                             </div>
-                            <div class="col-6 pl-0">
+                            <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Contact No*</label>
-                                    <input type="number" class="form-control pl-0" placeholder="Your contact no" id="contact">
+                                    <input type="text" class="form-control pl-0"  name="number" maxlength="10" required placeholder="Your contact no" id="contact">
                                 </div>
                             </div>
-                            <div class="col-6 pl-0">
+                            <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
+                                <div class="form-group mb-4 mt-0 mt-md-4 mt-lg-0 pt-4 pt-md-0">
+                                    <label class="pl-0" for="email">Location</label>
+                                    <input type="email" class="form-control pl-0"  name="location" placeholder="Enter Location" id="location">
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="location">Location</label>
-
+                                    <div class="w-100 cus-select">
+                                        <input type="text" class="form-control pl-0 custom-select-value" placeholder="Select your location" readonly>
+                                        <ul class="w-100 m-0 custom-select-options">
+                                            <li class="option">Location 1</li>
+                                            <li class="option">Location 2</li>
+                                            <li class="option">Location 3</li>
+                                        <ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-6 pl-0">
+                            </div> -->
+                            <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Budget</label>
-                                    <input type="number" class="form-control pl-0" placeholder="Your budget (INR Lakhs)" id="contact">
+                                    <input type="text" class="form-control pl-0"  name="budget" placeholder="Your budget (INR Lakhs)" id="budget">
                                 </div>
                             </div>
 
-                            <div class="col-6 pl-0">
+                            <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
                                 <div class="form-group mb-4">
                                     <label class="pl-0" for="number">Carpet Area</label>
-                                    <input type="number" class="form-control pl-0" placeholder="Type Something" id="contact">
+                                    <input type="type" class="form-control pl-0" name="area" placeholder="Type Something" id="carpet_area">
+                                </div>
+                            </div>
+                            <div class="col-12 p-0">
+                                <div class="form-group text-left mt-4">
+                                    <button type="submit" class="btn btn-primary contact-submit-btn">Submit</button>
+                                    <!-- <button class="btn btn-primary contact-submit-btn disabled">Clear</button> -->
                                 </div>
                             </div>
                         </div>
+                        <div class="success-message"><i class="fa fa-check text-primary"></i> Thank you!. Your message is successfully sent...</div>
+                        <div class="error-message">We're sorry, but something went wrong</div>
                     </form>
                 </div>
             </div>
@@ -466,45 +595,47 @@
         <!--Contact Us-->
     </main>
     <!--Footer-->
-    <footer class="footer-bg w-100 px-0 py-3">
+    <footer class="footer-bg w-100 py-3">
         <div class="row m-0 align-items-center">
-            <div class="col-6 col-md-3">
+            <div class="col-6 col-md-3 pl-0">
                 <figure class="m-0 p-0 logo">
-                    <img class="w-100" src="assets/img/Logo.svg" alt="Logo">
+                    <a href="index.html"><img class="w-100" src="assets/img/Logo.svg" alt="Logo"></a>
                 </figure>
             </div>
-            <div class="col-12 col-md-6 mt-3 m-md-0 text-center">
-                <p class="m-0">2020 © World Of Span. All rights reserved</p>
+            <div class="col-12 col-md-6 mt-3 m-md-0 p-0 px-md-3 text-center">
+                <p class="m-0">
+                  <span class="cpYear"></span> &copy; WORLD OF SPAN. All rights reserved
+                </p>
             </div>
-            <div class="col-6 col-md-3 text-right">
+            <div class="col-6 col-md-3 pr-0 text-right">
                 <ul class="list-inline m-0">
                     <li class="list-inline-item">
-                        <div class="social-icon">
+                        <a class="social-icon" target="_blank" href="https://www.facebook.com/worldofspan">
                             <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.8">
                                     <path d="M15.12 5.32003H17V2.14003C16.0897 2.04538 15.1751 1.99865 14.26 2.00003C11.54 2.00003 9.67999 3.66003 9.67999 6.70003V9.32003H6.60999V12.88H9.67999V22H13.36V12.88H16.42L16.88 9.32003H13.36V7.05003C13.36 6.00003 13.64 5.32003 15.12 5.32003Z" fill="white"/>
                                 </g>
                             </svg>
-                        </div>
+                        </a>
                     </li>
                     <li class="list-inline-item">
-                        <div class="social-icon">
+                        <a class="social-icon" target="_blank" href="https://twitter.com/worldofspan">
                             <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.8">
                                     <path d="M22 5.80021C21.2483 6.1263 20.4534 6.34187 19.64 6.44021C20.4982 5.92753 21.1413 5.12099 21.45 4.17021C20.6436 4.65027 19.7608 4.98851 18.84 5.17021C18.2245 4.50278 17.405 4.05851 16.5098 3.90706C15.6147 3.75562 14.6945 3.90557 13.8938 4.3334C13.093 4.76123 12.4569 5.44274 12.0852 6.27105C11.7135 7.09935 11.6273 8.0276 11.84 8.91021C10.2094 8.82774 8.61444 8.40316 7.15865 7.66407C5.70287 6.92498 4.41885 5.8879 3.39 4.62021C3.02914 5.25038 2.83952 5.96403 2.84 6.69021C2.83872 7.36459 3.00422 8.02883 3.32176 8.62377C3.63929 9.21872 4.09902 9.72592 4.66 10.1002C4.00798 10.0825 3.36989 9.90751 2.8 9.59021V9.64021C2.80489 10.5851 3.13599 11.4993 3.73731 12.2282C4.33864 12.957 5.17326 13.4559 6.1 13.6402C5.74326 13.7488 5.37287 13.806 5 13.8102C4.74189 13.8072 4.48442 13.7838 4.23 13.7402C4.49391 14.553 5.00462 15.2634 5.69107 15.7724C6.37753 16.2814 7.20558 16.5638 8.06 16.5802C6.6172 17.7155 4.83588 18.3351 3 18.3402C2.66574 18.3413 2.33174 18.3213 2 18.2802C3.87443 19.4905 6.05881 20.1329 8.29 20.1302C9.82969 20.1462 11.3571 19.8552 12.7831 19.2743C14.2091 18.6934 15.505 17.8341 16.5952 16.7467C17.6854 15.6593 18.548 14.3656 19.1326 12.9411C19.7172 11.5166 20.012 9.98994 20 8.45021V7.92021C20.7847 7.33502 21.4615 6.61763 22 5.80021Z" fill="white"/>
                                 </g>
                             </svg>
-                        </div>
+                        </a>
                     </li>
                     <li class="list-inline-item">
-                        <div class="social-icon">
+                        <a class="social-icon" target="_blank" href="https://www.instagram.com/worldofspan/">
                             <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.8">
                                     <path d="M20.947 8.30496C20.9369 7.54758 20.7951 6.79773 20.528 6.08896C20.2964 5.49111 19.9425 4.94816 19.4892 4.49479C19.0358 4.04142 18.4929 3.68761 17.895 3.45596C17.1953 3.19331 16.4562 3.0513 15.709 3.03596C14.747 2.99296 14.442 2.98096 12 2.98096C9.55801 2.98096 9.24501 2.98096 8.29001 3.03596C7.54317 3.05141 6.80436 3.19343 6.10501 3.45596C5.50707 3.68745 4.96403 4.0412 4.51064 4.49459C4.05725 4.94798 3.7035 5.49102 3.47201 6.08896C3.20884 6.78809 3.06713 7.52707 3.05301 8.27396C3.01001 9.23696 2.99701 9.54196 2.99701 11.984C2.99701 14.426 2.99701 14.738 3.05301 15.694C3.06801 16.442 3.20901 17.18 3.47201 17.881C3.70389 18.4787 4.05791 19.0215 4.51145 19.4747C4.96499 19.9279 5.50807 20.2815 6.10601 20.513C6.80344 20.7862 7.54238 20.9383 8.29101 20.963C9.25401 21.006 9.55901 21.019 12.001 21.019C14.443 21.019 14.756 21.019 15.711 20.963C16.4582 20.9482 17.1974 20.8066 17.897 20.544C18.4947 20.312 19.0375 19.9581 19.4909 19.5048C19.9442 19.0515 20.2981 18.5086 20.53 17.911C20.793 17.211 20.934 16.473 20.949 15.724C20.992 14.762 21.005 14.457 21.005 12.014C21.003 9.57196 21.003 9.26196 20.947 8.30496ZM11.994 16.602C9.44001 16.602 7.37101 14.533 7.37101 11.979C7.37101 9.42496 9.44001 7.35596 11.994 7.35596C13.2201 7.35596 14.396 7.84302 15.263 8.71C16.1299 9.57698 16.617 10.7529 16.617 11.979C16.617 13.2051 16.1299 14.3809 15.263 15.2479C14.396 16.1149 13.2201 16.602 11.994 16.602ZM16.801 8.26296C16.204 8.26296 15.723 7.78096 15.723 7.18496C15.723 7.04346 15.7509 6.90334 15.805 6.77262C15.8592 6.64189 15.9385 6.5231 16.0386 6.42305C16.1387 6.32299 16.2574 6.24363 16.3882 6.18948C16.5189 6.13533 16.659 6.10746 16.8005 6.10746C16.942 6.10746 17.0821 6.13533 17.2129 6.18948C17.3436 6.24363 17.4624 6.32299 17.5624 6.42305C17.6625 6.5231 17.7418 6.64189 17.796 6.77262C17.8501 6.90334 17.878 7.04346 17.878 7.18496C17.878 7.78096 17.396 8.26296 16.801 8.26296Z" fill="white"/>
                                     <path d="M11.994 14.9821C13.6525 14.9821 14.997 13.6376 14.997 11.9791C14.997 10.3206 13.6525 8.97607 11.994 8.97607C10.3355 8.97607 8.991 10.3206 8.991 11.9791C8.991 13.6376 10.3355 14.9821 11.994 14.9821Z" fill="white"/>
                                 </g>
                             </svg>
-                        </div>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -517,6 +648,7 @@
     <script src="assets/js/owl.carousel.js"></script>
     <script src="assets/js/OwlCarouselThumbs.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

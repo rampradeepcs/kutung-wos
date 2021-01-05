@@ -781,7 +781,7 @@ header ul li a:hover,
 
 @media screen and (max-height: 800px) {
     .carousel-item .banner-img {
-        max-width: 18rem;
+        max-width: 22rem;
     }
     
     .banner.has-bg {
@@ -800,7 +800,7 @@ header ul li a:hover,
 
 @media screen and (max-height: 640px) {
     .carousel-item .banner-img {
-        max-width: 16rem;
+        max-width: 17rem;
     }
 
     .title-banner {

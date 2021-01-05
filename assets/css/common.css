@@ -232,7 +232,10 @@ header ul li a:hover,
         order: 2;
     }
     .projects .row>div:first-child {
-        border-bottom: 0.1rem solid transparent;
+        border-bottom: 0.1rem solid #fff;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
         border-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.430287) 21.12%, rgba(255, 255, 255, 0.8) 50.28%, rgba(255, 255, 255, 0.518066) 77.89%, rgba(255, 255, 255, 0) 100%) 30 stretch;
     }
     .projects .row>div:first-child .proj-wrapper {
@@ -274,7 +277,7 @@ header ul li a:hover,
     }
     .menu .common-head {
         font-size: 1.75rem;
-        padding: 1.25rem 2rem;
+        padding: 1.9rem 1.75rem 1.25rem;
     }
     .menu-icon>svg:last-child {
         display: none;
@@ -507,8 +510,24 @@ header ul li a:hover,
 
 
 @media screen and (max-width: 768px) {
-    header .main-container {
+    /* header .main-container {
         border-bottom: 0 !important;
+    } */
+
+    .contact-head {
+        padding-left: 0;
+    }
+
+    #chManBlock {
+        padding: 1rem 1.25rem;
+    }
+
+    .contact label.pl-0[for="number"] {
+        padding-top: 1.5rem!important;
+    }
+
+    .footer-bg p {
+        text-align: left;
     }
 }
 
@@ -688,7 +707,7 @@ header ul li a:hover,
 @media screen and (min-width: 1200px) {
     .projects .row>div:first-child {
         border-bottom: 0;
-        border-right: 0.1rem solid transparent;
+        border-right: 0.1rem solid #fff;
         border-image: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.502528) 24.24%, rgba(255, 255, 255, 0.54) 50.31%, rgba(255, 255, 255, 0.486898) 76.33%, rgba(255, 255, 255, 0) 100%) 30 stretch;
     }
     .projects .row>div:first-child .proj-wrapper,
@@ -759,3 +778,34 @@ header ul li a:hover,
         background-size: 58vw;
     }
 }
+
+@media screen and (max-height: 800px) {
+    .carousel-item .banner-img {
+        max-width: 18rem;
+    }
+    
+    .banner.has-bg {
+        padding-bottom: 1.5rem;
+        padding-top: 6rem;
+    }
+
+    .common-section.banner .main-container {
+        height: 100%;
+    }
+
+    .common-section.banner.has-bg .main-container {
+        height: 90%;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .carousel-item .banner-img {
+        max-width: 16rem;
+    }
+
+    .title-banner {
+        font-size: 1.3rem;
+        margin-bottom: 2rem !important;
+    }
+}
+

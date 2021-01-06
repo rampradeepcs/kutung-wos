@@ -435,6 +435,11 @@ header ul li a:hover,
         width: auto;
         margin: 0 1rem 0 0;
     }
+    
+    lottie-player {
+        width: 100%;
+        margin: 1rem 0;
+    }
 }
 @media screen and (min-width: 576px) {
     .chMan-img-block {
@@ -584,6 +589,12 @@ header ul li a:hover,
 }
 
 @media screen and (min-width: 992px) {
+
+    lottie-player {
+        max-width: 100%;
+        margin-top: 7.5rem;
+    }
+
     .common-section {
         padding: 5rem 1.875rem;
     }
@@ -793,6 +804,7 @@ header ul li a:hover,
     }
     .vision-mission > .row > div:nth-child(3) {
         margin-top: 7.5rem;
+        margin-left: -2rem;
     }
 }
 

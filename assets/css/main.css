@@ -106,7 +106,26 @@ header .main-container {
     background-color: transparent;
 }
 
-.banner .carousel-indicators li.active:after {
+.banner .carousel-indicators li svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.banner .carousel-indicators li.active svg {
+    opacity: 1;
+}
+.banner .carousel-indicators li svg path {
+    stroke-dashoffset: 0;
+    transition: all 5s linear;
+}
+.banner .carousel-indicators li.active svg path {
+    stroke-dashoffset: 43.154109954833984;
+}
+/* .banner .carousel-indicators li.active:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -114,9 +133,9 @@ header .main-container {
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
-    /* background-color: #fff; */
+    background-color: #fff;
     transform: translate(-50%, -50%);
-}
+} */
 
 .org-txt {
     color: #DD911F !important;

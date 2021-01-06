@@ -29,9 +29,11 @@ function makeTimer() {
     
         makeTimer();
 
-        // $(".carousel").carousel({
-        //     interval: 3000
-        // });
+        $(".carousel").carousel({
+            interval: 5000
+        });
+
+        $('#bannerCarousel .carousel-indicators li:first-child').addClass("active");
     
         $('#bannerCarousel').on('slide.bs.carousel', function (e) {
             if(e.from == 0) {

@@ -51,19 +51,26 @@ header {
     left: 50%;
     transform: translate(-50%, 0);
 }
-
 .logo {
+    max-width: 10rem;
+}
+header .logo {
     max-width: 25vw;
 }
 
-.logo img.w-100 {
-    width: 3.8vw !important;
+ header .logo img.w-100 {
+    max-width: 3.8vw !important;
     margin-right: 15px;
 }
 
-.logo a {
+header .logo a {
     color: #fff;
     font-size: 1.25vw;
+    display: block;
+}
+
+header .logo a:hover {
+    text-decoration: none;
 }
 
 header {
@@ -164,6 +171,10 @@ header ul li a:hover,
     font-size: 0.8rem;
     margin-top: 0.5rem;
     display: block;
+}
+
+.earth-img img {
+    max-width: 30rem;
 }
 
 @media screen and (min-width: 320px) {
@@ -713,6 +724,9 @@ header ul li a:hover,
     .odd .row>div:nth-child(2) {
         order: 2;
     }
+    .vision-mission [class^='col-lg-4 p-0'] {
+        margin-top: 7.5vh;
+    }
 }
 
 @media screen and (min-width: 1100px) {
@@ -802,6 +816,9 @@ header ul li a:hover,
 }
 
 @media screen and (min-width: 1920px) {
+    * {
+        font-size: 20px;
+    }
     .banner .main-container {
         height: 85%;
     }

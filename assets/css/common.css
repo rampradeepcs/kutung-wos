@@ -149,6 +149,13 @@ header ul li a:hover,
     background-color: #111828;
 }
 
+.has-error span {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: block;
+}
+
 @media screen and (min-width: 320px) {
     * {
         font-size: 14px;

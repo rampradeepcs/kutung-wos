@@ -55,17 +55,17 @@ header {
     max-width: 10rem;
 }
 header .logo {
-    max-width: 25vw;
+    max-width: 100%;
 }
 
  header .logo img.w-100 {
-    max-width: 3.8vw !important;
+    max-width: 3rem !important;
     margin-right: 15px;
 }
 
 header .logo a {
     color: #fff;
-    font-size: 1.25vw;
+    font-size: 1.25rem;
     display: block;
 }
 
@@ -420,12 +420,12 @@ header ul li a:hover,
         margin: 0;
     }
     .vision-mission > .row > div:last-child p {
-        font-size: 1.35rem;
+        font-size: 1rem;
         font-weight: 600;
         color: #fff;
     }
     .vision-mission > .row > div:last-child span {
-        font-size: 1.15rem;
+        font-size: 0.85rem;
         font-style: italic;
     }
 }
@@ -548,17 +548,17 @@ header ul li a:hover,
 
 @media screen and (max-width: 768px) {
 
-    .logo img.w-100 {
+    header .logo img.w-100 {
         width: 50px !important;
         margin-right: 8px;
     }
     
-    .logo {
+    header .logo {
         width: 130% !important;
         max-width: 150%;
     }
     
-    .logo a {
+    header .logo a {
         font-size: 16px;
     }
     
@@ -742,6 +742,12 @@ header ul li a:hover,
     .vision-mission p, .bring-vision p, .bring-vision-two p {
         font-size: 1.25rem;
         line-height: 2.25rem;
+    }
+    .vision-mission > .row > div:last-child p {
+        font-size: 1.35rem;
+    }
+    .vision-mission > .row > div:last-child span {
+        font-size: 1.15rem;
     }
 }
 

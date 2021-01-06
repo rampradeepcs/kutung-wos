@@ -29,9 +29,9 @@ function makeTimer() {
     
         makeTimer();
 
-        $(".carousel").carousel({
-            interval: 3000
-        });
+        // $(".carousel").carousel({
+        //     interval: 3000
+        // });
     
         $('#bannerCarousel').on('slide.bs.carousel', function (e) {
             if(e.from == 0) {

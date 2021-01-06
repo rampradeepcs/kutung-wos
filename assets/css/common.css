@@ -174,7 +174,7 @@ header ul li a:hover,
 }
 
 .earth-img img {
-    max-width: 30rem;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 320px) {
@@ -418,6 +418,15 @@ header ul li a:hover,
     }
     .contact-submit-btn:last-child {
         margin: 0;
+    }
+    .vision-mission > .row > div:last-child p {
+        font-size: 1.35rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    .vision-mission > .row > div:last-child span {
+        font-size: 1.15rem;
+        font-style: italic;
     }
 }
 
@@ -724,8 +733,15 @@ header ul li a:hover,
     .odd .row>div:nth-child(2) {
         order: 2;
     }
-    .vision-mission [class^='col-lg-4 p-0'] {
-        margin-top: 7.5vh;
+    .vision-mission > .row > div:first-child {
+        margin-top: 2.5vh;
+    }
+    .vision-mission > .row > div:nth-child(3) {
+        margin-top: 2.5vh;
+    }
+    .vision-mission p, .bring-vision p, .bring-vision-two p {
+        font-size: 1.25rem;
+        line-height: 2.25rem;
     }
 }
 
@@ -765,6 +781,12 @@ header ul li a:hover,
     }
     .chMan-img-block {
         width: 70%;
+    }
+    .vision-mission > .row > div:first-child {
+        margin-top: 7.5rem;
+    }
+    .vision-mission > .row > div:nth-child(3) {
+        margin-top: 7.5rem;
     }
 }
 

@@ -370,6 +370,8 @@ header .main-container {
     background: linear-gradient(111.34deg, #021B44 0%, #461B00 100%);
 }
 
+
+
 @media screen and (max-width: 575px) {
     .our-core {
         background: none;

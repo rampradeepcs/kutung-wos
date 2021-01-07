@@ -112,7 +112,8 @@ header .main-container {
     left: 50%;
     width: 0.75rem;
     height: 0.75rem;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(-90deg);
+    transform-origin: center;
     opacity: 0;
 }
 .banner .carousel-indicators li.active svg {
@@ -120,10 +121,19 @@ header .main-container {
 }
 .banner .carousel-indicators li svg path {
     stroke-dashoffset: 0;
-    transition: all 5s linear;
+    /* transition: all 5s linear; */
 }
 .banner .carousel-indicators li.active svg path {
-    stroke-dashoffset: 43.154109954833984;
+    animation: rotateAnim 5s linear;
+}
+
+@keyframes rotateAnim {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -43.154109954833984;;
+    }
 }
 /* .banner .carousel-indicators li.active:after {
     content: "";

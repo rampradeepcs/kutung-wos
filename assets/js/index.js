@@ -24,16 +24,18 @@ function makeTimer() {
             $("#seconds").html("<h4 class='m-0 mb-3 common-head'>"+seconds+"</h4><span>Secs</span>");		
     
     }
+
+    $(window).on("load", function() {
+        $('#bannerCarousel .carousel-indicators li:first-child').addClass("active");
+    });
     
     $(document).ready(function() {
-    
-        makeTimer();
+
+        setInterval(function() { makeTimer(); }, 1000);
 
         $(".carousel").carousel({
             interval: 5000
         });
-
-        $('#bannerCarousel .carousel-indicators li:first-child').addClass("active");
     
         $('#bannerCarousel').on('slide.bs.carousel', function (e) {
             if(e.from == 0) {

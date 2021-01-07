@@ -895,3 +895,14 @@ header ul li a:hover,
     }
 }
 
+@media screen and (min-height: 900px) and (max-height: 1090px) {
+    .banner.has-bg:after {
+        background-size: 48vw;
+    }
+}
+
+/* @media screen and (min-width: 1880px) and (max-width: 1922px) {
+    .banner.has-bg:after {
+        background-size: 48vw;
+    }
+} */

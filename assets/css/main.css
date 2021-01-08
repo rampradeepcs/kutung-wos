@@ -480,6 +480,7 @@ h4.common-head {
 @media screen and (max-width: 568px) {
   .banner {
     height: 100vh !important;
+    padding-bottom: 0;
   }
 }
 

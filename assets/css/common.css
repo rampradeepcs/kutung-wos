@@ -566,6 +566,17 @@ header ul li a:hover,
 }
 
 @media screen and (max-width: 768px) {
+
+    .media-centre-item h6 {
+        height: 1.85rem;
+        overflow: hidden;
+    }
+
+    .media-centre-item p {
+        height: 3rem;
+        overflow: hidden;
+    }
+    
   header .logo img.w-100 {
     width: 50px !important;
     margin-right: 8px;

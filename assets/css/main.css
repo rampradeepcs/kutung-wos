@@ -604,7 +604,7 @@ h4.common-head {
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color: #fff !important;
+    color: rgb(255 255 255 / 80%) !important;
   }
 
   .customNextBtn,

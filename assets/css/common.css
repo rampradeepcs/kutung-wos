@@ -436,11 +436,12 @@ header ul li a:hover,
   .vision-mission > .row > div:last-child p {
     font-size: 1rem;
     font-weight: 600;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.80);
   }
   .vision-mission > .row > div:last-child span {
     font-size: 0.85rem;
     font-style: italic;
+    font-weight: 600;
   }
 }
 

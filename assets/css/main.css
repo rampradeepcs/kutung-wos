@@ -660,24 +660,24 @@ h4.common-head {
 }
 
 @media screen and (min-width: 1198px) {
-  .banner {
-    min-height: unset;
-    height: 100vh;
-    max-height: 100vh;
-  }
+    .banner {
+      min-height: unset;
+      height: 100vh;
+      max-height: 100vh;
+    }
 
-  .wait-over.banner-2,
-  .common-head.banner-2 {
-    margin-bottom: 4rem;
-  }
+    .wait-over.banner-2,
+    .common-head.banner-2 {
+      margin-bottom: 4rem;
+    }
 
-  .banner .carousel-indicators {
-    bottom: 5%;
-  }
+    .banner .carousel-indicators {
+      bottom: 5%;
+    }
 
-  ..banner .main-container {
-    height: 100vh !important;
-  }
+    .banner .main-container {
+      height: 100vh !important;
+    }
 }
 
 @media screen and (max-width: 414px) {

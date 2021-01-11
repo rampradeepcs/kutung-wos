@@ -49,10 +49,11 @@ $(document).ready(function () {
   // }, 1000);
 
   $(".carousel").carousel({
-    interval: 3000,
+    interval: 3000
   });
 
   $("#bannerCarousel").on("slide.bs.carousel", function (e) {
+    console.log(e);
     if (e.from == 0) {
       $(".banner").removeClass("has-bg");
     } else if (e.to == 0) {
@@ -60,6 +61,14 @@ $(document).ready(function () {
         $(".banner").addClass("has-bg");
       }, 500);
     }
+
+    // if (e.to == 3) {
+    //   setTimeout(function () {
+    //     $(".banner").addClass("has-last-bg");
+    //   }, 500);
+    // } else if (e.to == 0) {
+    //   $(".banner").removeClass("has-last-bg");
+    // }
   });
 
   /*Media Centre Carousel*/

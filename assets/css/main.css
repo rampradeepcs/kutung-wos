@@ -425,6 +425,9 @@ h4.common-head {
   top: 6rem;
   max-width: calc(33.3% - 1.225rem);
 }
+#chManBlockItem.cmLogoBlock.fixed {
+  max-width: calc(33.3% - 9.5vw);
+}
 
 #chManBlockItem.btmFixed {
   position: absolute;
@@ -496,6 +499,15 @@ h4.common-head {
 }
 .form-tab.active {
   display: block;
+}
+
+.cmLogoBlock h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.cmLogoBlock .chMan-img-block-content p {
+  color: #fff;
 }
 
 @media screen and (max-width: 575px) {

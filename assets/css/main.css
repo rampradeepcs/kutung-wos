@@ -436,6 +436,20 @@ h4.common-head {
   background: linear-gradient(111.34deg, #021b44 0%, #461b00 100%);
 }
 
+@media screen and (max-width: 414px) {
+  .xs-mob-pt-110 {
+    padding-top: 100px !important;
+  }
+
+  .xs-mob-pt-40 {
+    padding-top: 40px;
+  }
+
+  .xs-mob-pt-25 {
+    padding-top: 25px;
+  }
+}
+
 @media screen and (max-width: 575px) {
   .our-core {
     background: none;
@@ -539,6 +553,10 @@ h4.common-head {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
   }
 
   .pos-rel {
@@ -659,38 +677,30 @@ h4.common-head {
   }
 }
 
-@media screen and (min-width: 1198px) {
-    .banner {
-      min-height: unset;
-      height: 100vh;
-      max-height: 100vh;
-    }
-
-    .wait-over.banner-2,
-    .common-head.banner-2 {
-      margin-bottom: 4rem;
-    }
-
-    .banner .carousel-indicators {
-      bottom: 5%;
-    }
-
-    .banner .main-container {
-      height: 100vh !important;
-    }
+@media screen and (min-width: 768px) and (max-width: 998px) {
+  .banner {
+    max-height: 900px;
+  }
 }
 
-@media screen and (max-width: 414px) {
-  .xs-mob-pt-110 {
-    padding-top: 100px !important;
+@media screen and (min-width: 1198px) {
+  .banner {
+    min-height: unset;
+    height: 100vh;
+    max-height: 100vh;
   }
 
-  .xs-mob-pt-40 {
-    padding-top: 40px;
+  .wait-over.banner-2,
+  .common-head.banner-2 {
+    margin-bottom: 4rem;
   }
 
-  .xs-mob-pt-25 {
-    padding-top: 25px;
+  .banner .carousel-indicators {
+    bottom: 5%;
+  }
+
+  .banner .main-container {
+    height: 100vh !important;
   }
 }
 

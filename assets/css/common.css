@@ -47,6 +47,11 @@ button:focus {
   border: 0;
 }
 
+textarea {
+  resize: none;
+  padding-left: 0 !important;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -617,6 +622,10 @@ header ul li a:hover,
   lottie-player {
     max-width: 100%;
     margin-top: 7rem;
+  }
+
+  .banner .common-head {
+    line-height: 5rem;
   }
 
   .common-section {

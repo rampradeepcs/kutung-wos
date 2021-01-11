@@ -44,9 +44,9 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
-  setInterval(function () {
-    makeTimer();
-  }, 1000);
+  // setInterval(function () {
+  //   makeTimer();
+  // }, 1000);
 
   $(".carousel").carousel({
     interval: 3000,

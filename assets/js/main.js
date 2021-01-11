@@ -90,6 +90,16 @@ $(document).ready(function() {
         $(this).parent("ul").siblings("input").val($(this).text());
         $(this).parent("ul").removeClass("enable");
     });
+
+
+    $(".checkbox-wrapper").find("input").on("change", function() {
+
+        $(".form-tab").hide();
+        $("#"+ $(this).val()).addClass("active");
+        $(".form-group").removeClass("has-error");
+        $(".has-error").remove();
+        $("#"+ $(this).val()).show();
+    });
 });
 
 $(window).on("scroll", function() {

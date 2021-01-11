@@ -149,7 +149,7 @@ header .main-container {
   /* transition: all 5s linear; */
 }
 .banner .carousel-indicators li.active svg path {
-  animation: rotateAnim 5s linear;
+  animation: rotateAnim 3s linear;
 }
 
 .wait-over {
@@ -269,7 +269,7 @@ h4.common-head {
 
 .bring-vision,
 .bring-vision-two {
-  background: #010d22;
+  background: #051d00;
 }
 
 .vision-mission p,
@@ -377,15 +377,16 @@ h4.common-head {
   color: #ffffff;
 }
 
-.contact input,
-.contact input:focus,
-.contact input[readonly] {
+.contact .form-control:not(.form-check-input),
+.contact .form-control:not(.form-check-input):focus,
+.contact .form-control:not(.form-check-input)[readonly] {
   background-color: transparent;
   border: 0;
   border-bottom: 0.01rem solid #fff;
   border-radius: inherit;
   box-shadow: none;
   color: #fff;
+  font-size: 1.15rem;
 }
 
 .contact .has-error label {
@@ -436,18 +437,66 @@ h4.common-head {
   background: linear-gradient(111.34deg, #021b44 0%, #461b00 100%);
 }
 
-@media screen and (max-width: 414px) {
-  .xs-mob-pt-110 {
-    padding-top: 100px !important;
-  }
+.contact .form-check {
+  padding: 0;
+  margin-right: 2rem;
+}
 
-  .xs-mob-pt-40 {
-    padding-top: 40px;
-  }
+.contact .form-check-label span {
+  padding: 0 0 0 2rem;
+  display: block;
+  font-size: 1.15rem;
+  line-height: 2.65rem;
+  position: relative;
+  opacity: 0.3;
+}
 
-  .xs-mob-pt-25 {
-    padding-top: 25px;
-  }
+.contact .form-check-label span:before,
+.contact .form-check-label span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.contact .form-check-label span:before {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+}
+.contact .form-check-label span:after {
+  width: 0.75rem;
+  height: 0.75rem;
+  left: 0.25rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: none;
+}
+
+.contact .form-check-label input:checked + span {
+  opacity: 1;
+}
+
+.contact .form-check-label input:checked + span:after {
+  display: block;
+}
+
+.contact input.form-check-input {
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.form-tab {
+  display: none;
+}
+.form-tab.active {
+  display: block;
 }
 
 @media screen and (max-width: 575px) {

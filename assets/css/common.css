@@ -431,6 +431,10 @@ header ul li a:hover,
   .chMan-img-block figure img {
     max-width: 15rem;
   }
+  
+  .cmLogoBlock figure img {
+    max-width: 6rem;
+  }
   .contact-submit-btn {
     width: 100%;
     margin-bottom: 1rem;
@@ -562,6 +566,10 @@ header ul li a:hover,
   .chMan-img-block figure {
     background: linear-gradient(180deg, rgba(31, 37, 48, 0) 0%, #1f2530 100%);
     padding: 2rem 2.75rem 0;
+  }
+  .cmLogoBlock figure {
+    background: linear-gradient(180deg, rgba(31, 37, 48, 0) 0%, #1f25308a 100%);
+    padding: 2rem 1.5rem;
   }
   .chMan-img-block {
     display: block;
@@ -769,7 +777,7 @@ header ul li a:hover,
     order: 1;
   }
   .chMan-img-block {
-    width: 75%;
+    width: 100%;
   }
   .odd .row > div:nth-child(1) {
     order: 1;
@@ -840,7 +848,7 @@ header ul li a:hover,
     text-align: left;
   }
   .chMan-img-block {
-    width: 70%;
+    width: 80%;
   }
   .vision-mission > .row > div:first-child {
     margin-top: 7.5rem;

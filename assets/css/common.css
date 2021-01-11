@@ -465,6 +465,7 @@ header ul li a:hover,
     margin: 1rem 0;
   }
 }
+
 @media screen and (min-width: 576px) {
   .chMan-img-block {
     display: flex;
@@ -480,6 +481,20 @@ header ul li a:hover,
 }
 
 @media screen and (min-width: 768px) {
+
+    .banner .carousel-inner .carousel-item:last-child .banner-img {
+        opacity: 0;
+    }
+  
+    .banner.has-bg4 {
+      background: url(../img/banner-4.png) no-repeat;
+      background-color: #001231;
+      background-position: bottom right;
+      background-size: cover;
+      content: "";
+      height: 100%;
+    }
+
   .owl-thumb-item img {
     width: 7.5rem;
   }
@@ -581,6 +596,13 @@ header ul li a:hover,
 
 @media screen and (max-width: 768px) {
 
+    .banner.has-bg4 {
+        background: url(../img/banner-4-md.png) no-repeat;
+        background-color: #001231;
+        background-size: 100%;
+        background-position: bottom right;
+      }
+
     .media-centre-item h6 {
         height: 1.85rem;
         overflow: hidden;
@@ -626,7 +648,14 @@ header ul li a:hover,
   }
 }
 
+@media screen and (max-width: 991px) {
+    .banner .carousel-inner .carousel-item:last-child .banner-img {
+        opacity: 0;
+    }
+}
+
 @media screen and (min-width: 992px) {
+    
   lottie-player {
     max-width: 100%;
     margin-top: 7rem;
@@ -658,6 +687,7 @@ header ul li a:hover,
   .timer-block {
     width: 75%;
   }
+
   .banner.has-bg:after {
     background: url(../img/Illustrations/banner1.png) no-repeat;
     background-position: right -10vw bottom -10vh;
@@ -806,6 +836,10 @@ header ul li a:hover,
 }
 
 @media screen and (min-width: 1100px) {
+
+    .banner.has-bg4 {
+        background-position: top -5vh right;
+    }
   .recent-launch figcaption {
     bottom: 25%;
     transform: translate(-50%, 0);
@@ -886,9 +920,9 @@ header ul li a:hover,
   .owl-thumb-item img {
     width: 12rem;
   }
-  .chMan-img-block {
+  /* .chMan-img-block {
     width: 62.5%;
-  }
+  } */
 }
 
 @media screen and (min-width: 1600px) {
@@ -957,6 +991,11 @@ header ul li a:hover,
   }
 
 @media screen and (max-width: 552px) {
+
+    .banner .carousel-inner .carousel-item:last-child .banner-img {
+        opacity: 1;
+        margin-top: -1.5rem;
+    }
 
     .common-section h4.common-head, .common-head {
         font-size: 2.25rem;

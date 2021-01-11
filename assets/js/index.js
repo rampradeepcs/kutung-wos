@@ -44,16 +44,15 @@ $(window).on("load", function () {
 });
 
 $(document).ready(function () {
-  // setInterval(function () {
-  //   makeTimer();
-  // }, 1000);
+  setInterval(function () {
+    makeTimer();
+  }, 1000);
 
   $(".carousel").carousel({
-    interval: 3000
+    interval: 3000,
   });
 
   $("#bannerCarousel").on("slide.bs.carousel", function (e) {
-    console.log(e);
     if (e.from == 0) {
       $(".banner").removeClass("has-bg");
     } else if (e.to == 0) {
@@ -62,13 +61,19 @@ $(document).ready(function () {
       }, 500);
     }
 
-    // if (e.to == 3) {
-    //   setTimeout(function () {
-    //     $(".banner").addClass("has-last-bg");
-    //   }, 500);
-    // } else if (e.to == 0) {
-    //   $(".banner").removeClass("has-last-bg");
-    // }
+    if (e.to == 3) {
+      setTimeout(function () {
+        $(".banner").addClass("has-bg4");
+      }, 400);
+    } else if (e.to == 0) {
+      $(".banner").removeClass("has-bg4");
+    }
+    else if (e.to == 2) {
+      $(".banner").removeClass("has-bg4");
+    }
+    else if (e.to == 1) {
+      $(".banner").removeClass("has-bg4");
+    }
   });
 
   /*Media Centre Carousel*/

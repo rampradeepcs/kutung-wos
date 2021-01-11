@@ -725,7 +725,7 @@ h4.common-head {
   .banner-2-img {
     position: absolute;
     left: 50%;
-    bottom: -200px;
+    bottom: -32vh;
     transform: translateX(-50%);
   }
 
@@ -751,7 +751,7 @@ h4.common-head {
     max-height: 100vh;
   }
 
-  .wait-over.banner-2,
+  
   .common-head.banner-2 {
     margin-bottom: 4rem;
   }

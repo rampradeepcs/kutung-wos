@@ -6,6 +6,11 @@
   max-width: 100%;
 }
 
+.validation-error {
+  margin-bottom: 0;
+  color: red;
+}
+
 .our-core {
   background-color: #000f28;
   background-image: url(../img/Our_Core_focus_Ellipse.svg);
@@ -751,7 +756,6 @@ h4.common-head {
     max-height: 100vh;
   }
 
-  
   .common-head.banner-2 {
     margin-bottom: 4rem;
   }

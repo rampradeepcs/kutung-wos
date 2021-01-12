@@ -324,7 +324,8 @@
             <div class="w-100 text-center earth-img">
               <!-- <img src="assets/img/earth.png" class="w-100" alt=""> -->
               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-              <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_SkhtL8.json"
+              <lottie-player
+                src="https://assets3.lottiefiles.com/packages/lf20_SkhtL8.json"
                 background="transparent"
                 speed="1"
                 loop
@@ -1034,7 +1035,7 @@
                           <input
                             type="radio"
                             name="profile"
-                            class="form-check-input"
+                            class="form-check-input profile"
                             value="investor"
                             checked
                           />
@@ -1046,7 +1047,7 @@
                           <input
                             type="radio"
                             name="profile"
-                            class="form-check-input"
+                            class="form-check-input profile"
                             value="home_buyer"
                           />
                           <span>Home Buyer</span>
@@ -1057,7 +1058,7 @@
                           <input
                             type="radio"
                             name="profile"
-                            class="form-check-input"
+                            class="form-check-input profile"
                             value="seeking_info"
                           />
                           <span>Seeking Info</span>
@@ -1074,12 +1075,12 @@
                         <input
                           type="text"
                           pattern="[a-zA-Z]*"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-name-input"
                           name="name"
-                          required
                           placeholder="Your full name"
                           id="name"
                         />
+                        <p id="name-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
@@ -1089,12 +1090,12 @@
                         <label class="pl-0" for="email">Email*</label>
                         <input
                           type="email"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-email-input"
                           name="email"
-                          required
                           placeholder="Your email address"
                           id="email"
                         />
+                        <p id="email-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
@@ -1102,14 +1103,14 @@
                         <label class="pl-0" for="number">Contact No*</label>
                         <input
                           type="text"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-phone-input"
                           name="number"
                           minlength="10"
                           maxlength="10"
-                          required
                           placeholder="Your contact no"
                           id="contact"
                         />
+                        <p id="phone-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 p-0"></div>
@@ -1118,7 +1119,7 @@
                         <label class="pl-0" for="number">Your Query</label>
                         <textarea
                           rows="3"
-                          class="form-control"
+                          class="form-control query"
                           placeholder="Type Something"
                         ></textarea>
                       </div>
@@ -1145,12 +1146,12 @@
                         <input
                           type="text"
                           pattern="[a-zA-Z]*"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-name-input"
                           name="name"
-                          required
                           placeholder="Your full name"
                           id="name"
                         />
+                        <p id="name-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
@@ -1160,12 +1161,12 @@
                         <label class="pl-0" for="email">Email*</label>
                         <input
                           type="email"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-email-input"
                           name="email"
-                          required
                           placeholder="Your email address"
                           id="email"
                         />
+                        <p id="email-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
@@ -1173,14 +1174,14 @@
                         <label class="pl-0" for="number">Contact No*</label>
                         <input
                           type="text"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-phone-input"
                           name="number"
                           minlength="10"
                           maxlength="10"
-                          required
                           placeholder="Your contact no"
                           id="contact"
                         />
+                        <p id="phone-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
@@ -1190,7 +1191,7 @@
                         <label class="pl-0" for="email">Location</label>
                         <input
                           type="text"
-                          class="form-control pl-0"
+                          class="form-control pl-0contact-location-input"
                           name="location"
                           placeholder="Enter Location"
                           id="location"
@@ -1202,7 +1203,7 @@
                         <label class="pl-0" for="number">Budget</label>
                         <input
                           type="text"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-budget-input"
                           name="budget"
                           placeholder="Your budget (INR Lakhs)"
                           id="budget"
@@ -1215,7 +1216,7 @@
                         <label class="pl-0" for="number">Carpet Area</label>
                         <input
                           type="type"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-carpetArea-input"
                           name="area"
                           placeholder="Area in Sq.ft"
                           id="carpet_area"
@@ -1244,12 +1245,12 @@
                         <input
                           type="text"
                           pattern="[a-zA-Z]*"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-name-input"
                           name="name"
-                          required
                           placeholder="Your full name"
                           id="name"
                         />
+                        <p id="name-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pr-0 pl-0 pl-md-3">
@@ -1259,12 +1260,12 @@
                         <label class="pl-0" for="email">Email*</label>
                         <input
                           type="email"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-email-input"
                           name="email"
-                          required
                           placeholder="Your email address"
                           id="email"
                         />
+                        <p id="email-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 col-md-6 pl-0 pr-0 pr-md-4">
@@ -1272,14 +1273,14 @@
                         <label class="pl-0" for="number">Contact No*</label>
                         <input
                           type="text"
-                          class="form-control pl-0"
+                          class="form-control pl-0 contact-phone-input"
                           name="number"
                           minlength="10"
                           maxlength="10"
-                          required
                           placeholder="Your contact no"
                           id="contact"
                         />
+                        <p id="phone-error" class="validation-error"></p>
                       </div>
                     </div>
                     <div class="col-12 p-0"></div>
@@ -1288,7 +1289,7 @@
                         <label class="pl-0" for="number">Your Query</label>
                         <textarea
                           rows="3"
-                          class="form-control"
+                          class="form-control query"
                           placeholder="Type Something"
                         ></textarea>
                       </div>

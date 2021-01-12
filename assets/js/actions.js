@@ -37,28 +37,38 @@ function contactFormSubmit(e) {
     location: $(".contact-location-input").val(),
     budget: $(".contact-budget-input").val(),
     carpetArea: $(".contact-carpetArea-input").val(),
+    profile: $(".profile").val() || "",
+    query: $(".query").val() || "",
   };
   console.log(payload);
-  const request = $.ajax({
-    type: "POST",
-    url: "http://139.59.84.64/api/1.0/contact",
-    data: JSON.stringify(payload),
-    contentType: "application/json; charset=utf-8",
-    dataType: "json",
-  });
-  request.done(function (resp) {
-    $(".contact-name-input").val("");
-    $(".contact-email-input").val("");
-    $(".contact-phone-input").val("");
-    $(".contact-location-input").val("");
-    $(".contact-budget-input").val("");
-    $(".contact-carpetArea-input").val("");
-  });
-  request.fail(function (err, status) {
-    const { validationErrors } = JSON.parse(err.responseText);
-    const { name, email, phone } = validationErrors;
-    $("#name-error").html(name);
-    $("#email-error").html(email);
-    $("#phone-error").html(phone);
-  });
+
+  // Commenting out this code because EMAIL will go to client. Please check the payload in console.log above
+
+  // const request = $.ajax({
+  //   type: "POST",
+  //   url: "http://localhost:8000/api/1.0/contact",
+  //   data: JSON.stringify(payload),
+  //   contentType: "application/json; charset=utf-8",
+  //   dataType: "json",
+  // });
+  // request.done(function (resp) {
+  //   $(".contact-name-input").val("");
+  //   $(".contact-email-input").val("");
+  //   $(".contact-phone-input").val("");
+  //   $(".contact-location-input").val("");
+  //   $(".contact-budget-input").val("");
+  //   $(".contact-carpetArea-input").val("");
+  //   $(".query").val("");
+  //   $("#name-error").html("");
+  //   $("#email-error").html("");
+  //   $("#phone-error").html("");
+  // });
+  // request.fail(function (err, status) {
+  //   const { validationErrors } = JSON.parse(err.responseText);
+  //   const { name, email, phone } = validationErrors;
+  //   console.log(validationErrors, "********");
+  //   $("#name-error").html(name);
+  //   $("#email-error").html(email);
+  //   $("#phone-error").html(phone);
+  // });
 }

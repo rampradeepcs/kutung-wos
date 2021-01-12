@@ -184,6 +184,36 @@ header ul li a:hover,
   max-width: 100%;
 }
 
+.error-page .logo-404 {
+    max-width: 220px;
+    margin-top: 20px;
+}
+
+.error-page .main-container.error-container {
+    max-width: 40vw;
+    margin: 0 auto;
+    padding-top: 18vh;
+    display: block;
+    text-align: center;
+    height: calc(100vh - 5rem);
+    width: 80%;
+}
+
+body.error-page {
+    background: linear-gradient(111.34deg, #021b44 0%, #461b00 100%);
+}
+
+body.error-page *{
+    color: #fff;
+}
+
+body.error-page p {
+    margin: 4vh 0;
+}
+
+.error-page g#messageBlock * {font-size: 12px}
+
+
 @media screen and (min-width: 320px) {
   * {
     font-size: 14px;
@@ -597,6 +627,16 @@ header ul li a:hover,
 
 @media screen and (max-width: 768px) {
 
+    .error-page .contact-submit-btn {
+        width: auto;
+    }
+
+    .error-page .main-container.error-container {
+        max-width: 100%;
+        width: 100%;
+        height: calc(100vh - 7rem);
+    }
+
     .banner.has-bg4 {
         background: url(../img/banner-4-md.png) no-repeat;
         background-color: #001231;
@@ -996,6 +1036,10 @@ header ul li a:hover,
   }
 
 @media screen and (max-width: 552px) {
+
+    .error-page .main-container.error-container {
+        padding-top: 5vh;
+    }
 
     .banner .carousel-inner .carousel-item:last-child .banner-img {
         opacity: 1;

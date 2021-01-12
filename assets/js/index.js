@@ -49,7 +49,7 @@ $(document).ready(function () {
   }, 1000);
 
   $(".carousel").carousel({
-    interval: 3000,
+    interval: 5000,
   });
 
   $("#bannerCarousel").on("slide.bs.carousel", function (e) {

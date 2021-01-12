@@ -97,7 +97,7 @@ $(document).ready(function () {
   $(".checkbox-wrapper")
     .find("input")
     .on("change", function () {
-      $(".form-tab").hide();
+      $(".form-tab").hide().removeClass("active");
       $("#" + $(this).val()).addClass("active");
       $(".form-group").removeClass("has-error");
       $(".has-error").remove();

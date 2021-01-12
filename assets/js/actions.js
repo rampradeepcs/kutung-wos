@@ -31,14 +31,14 @@ function registrationFormSubmit(e) {
 function contactFormSubmit(e) {
   // e.preventDefault();
   var payload = {
-    name: $(".contact-name-input").val(),
-    email: $(".contact-email-input").val(),
-    phone: $(".contact-phone-input").val(),
-    location: $(".contact-location-input").val(),
-    budget: $(".contact-budget-input").val(),
-    carpetArea: $(".contact-carpetArea-input").val(),
+    name: $(".form-tab.active .contact-name-input").val(),
+    email: $(".form-tab.active .contact-email-input").val(),
+    phone: $(".form-tab.active .contact-phone-input").val(),
+    location: $(".form-tab.active .contact-location-input").val(),
+    budget: $(".form-tab.active .contact-budget-input").val(),
+    carpetArea: $(".form-tab.active .contact-carpetArea-input").val(),
     profile: $(".profile").val() || "",
-    query: $(".query").val() || "",
+    query: $(".form-tab.active .query").val() || "",
   };
   console.log(payload);
 

@@ -117,3 +117,7 @@ $(window).on("scroll", function () {
     $("header").removeClass("scrolled");
   }
 });
+
+$(window).on("load", function() {
+  $("#loader").hide();
+});

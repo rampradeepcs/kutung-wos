@@ -154,7 +154,7 @@ header .main-container {
   /* transition: all 5s linear; */
 }
 .banner .carousel-indicators li.active svg path {
-  animation: rotateAnim 3s linear;
+  animation: rotateAnim 5s linear;
 }
 
 .wait-over {

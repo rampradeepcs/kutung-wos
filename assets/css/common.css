@@ -509,6 +509,7 @@ body.error-page p {
     left: 0;
     bottom: 0;
     margin: 0 1rem !important;
+    width: calc(100% - 2rem);
   }
   .gallery-item figure img {
     height: 100%;
@@ -518,7 +519,7 @@ body.error-page p {
     bottom: 0;
     left: 50%;
     padding: 2rem 1rem 5rem;
-    width: calc(100% - 2rem);
+    width: calc(100% - 1.75rem);
     transform: translate(-50%, 0);
     background: linear-gradient(180deg, rgba(2, 15, 37, 0) 0%, #020F25 100%);
     transition: all 0.3s linear;
@@ -554,6 +555,25 @@ body.error-page p {
   .gallery-overlay button:hover, .gallery-item:hover .gallery-overlay button {
     border: 0.1rem solid #347af4;
     background-color: #347af4;
+  }
+  
+  .gallery-desc {
+    background-color: #000918;
+  }
+  .gallery-desc .media-centre-item {    
+    background: linear-gradient(180deg, rgba(2, 15, 37, 0) 0%, #020F25 100%);
+  }
+  .gallery-desc .gallery-item {
+    max-width: 100% !important;
+    flex: 1 0 100% !important;
+  }
+  .gallery-desc-block .common-section h6 {
+    color: #fff;
+  }
+  .gallery-desc-block .common-section h6 span {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-left: 0.5rem;
   }
 }
 
@@ -702,6 +722,24 @@ body.error-page p {
   }
   #chManBlockItem.fixed {
     right: 1.25rem;
+  }
+  .gallery-desc-block .page-head {
+    height: 55rem;
+    background: none;
+  }
+  .gallery-desc-block .page-head .bg-img {
+    background: linear-gradient(180deg, rgba(5, 22, 50, 0) 0%, rgba(5, 22, 50, 0.43) 76.28%, #051632 100%), url(../img/projects/g-1.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .bg-img-content {
+    position: absolute;
+    bottom: 10rem;
+    left: 0;
+  }
+  .common-head.common-head-xs {
+    font-size: 3.5rem;
   }
 }
 

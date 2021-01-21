@@ -568,6 +568,7 @@ h4.common-head {
         bottom: 2%;
     }*/
   /* RP */
+  
 }
 
 @media screen and (max-width: 568px) {
@@ -753,6 +754,10 @@ h4.common-head {
 
   .carousel-indicators {
     bottom: 10%;
+  }
+  .gallery .gallery-item {
+    flex: 1 0 33.3%;
+    max-width: 33.3%;
   }
 }
 

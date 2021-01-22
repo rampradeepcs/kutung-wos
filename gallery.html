@@ -93,8 +93,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/1.png"
-                    alt="Media Centre Image 1"
+                    src="assets/img/gallery/g1.jpg"
+                    alt="Gallery Image 1"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -113,8 +113,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/2.png"
-                    alt="Media Centre Image 2"
+                    src="assets/img/gallery/g2.jpg"
+                    alt="Gallery Image 2"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -133,8 +133,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/3.png"
-                    alt="Media Centre Image 3"
+                    src="assets/img/gallery/g3.jpg"
+                    alt="Gallery Image 3"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -153,8 +153,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/1.png"
-                    alt="Media Centre Image 1"
+                    src="assets/img/gallery/g4.jpg"
+                    alt="Gallery Image 4"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -173,8 +173,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/2.png"
-                    alt="Media Centre Image 2"
+                    src="assets/img/gallery/g5.jpg"
+                    alt="Gallery Image 5"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -193,8 +193,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/3.png"
-                    alt="Media Centre Image 3"
+                    src="assets/img/gallery/g6.jpg"
+                    alt="Gallery Image 6"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -213,8 +213,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/3.png"
-                    alt="Media Centre Image 3"
+                    src="assets/img/gallery/g7.jpg"
+                    alt="Gallery Image 7"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -233,8 +233,8 @@
                 <figure class="m-0 p-0 mb-3">
                     <img
                     class="w-100"
-                    src="assets/img/media-centre/3.png"
-                    alt="Media Centre Image 3"
+                    src="assets/img/gallery/g8.jpg"
+                    alt="Gallery Image 8"
                     />
                 </figure>
                 <!-- <h4 class="m-0 mb-4">
@@ -306,15 +306,8 @@
 
     <script type="text/javascript">
     $(window).on("load", function() {
-        
-        $(".gallery-overlay h4").each(function(){
-            //console.log($(this).outerHeight() + (5 * 14));
-            let height = $(this).outerHeight() + (5 * 14);
-            let temp = $(this);
-            let TOP = "calc(100% - "+ height +"px)";
-            console.log(temp[0].style.top, "calc(100% - "+ height +")");
-            temp[0].style.top = top;
-            console.log(temp[0].style.top);
+        $(".gallery-overlay button").on("click", function() {
+            window.location.href = "gallery-desc.html";
         });
     });
     </script>

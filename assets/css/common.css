@@ -508,8 +508,8 @@ body.error-page p {
     top: 0;
     left: 0;
     bottom: 0;
-    margin: 0 1rem !important;
-    width: calc(100% - 2rem);
+    margin: 0 !important;
+    width: 100%;
   }
   .gallery-item figure img {
     height: 100%;
@@ -520,7 +520,7 @@ body.error-page p {
     top: 0;
     left: 50%;
     padding: 2rem 1rem 5rem;
-    width: calc(100% - 1.75rem);
+    width: 100%;
     transform: translate(-50%, 0);
     background: linear-gradient(180deg, rgba(2, 15, 37, 0) 0%, #020F25 100%);
     transition: all 0.3s linear;
@@ -611,6 +611,9 @@ body.error-page p {
   .common-head.common-head-xs {
     font-size: 3.5rem;
   }
+  .gallery-desc-block h4 {
+    line-height: 2.5rem;
+  }
 }
 
 
@@ -645,6 +648,13 @@ body.error-page p {
   .gallery .gallery-item {
     flex: 1 0 50%;
     max-width: 50%;
+  }
+  .gallery-item figure {
+    margin: 0 1rem !important;
+    width: calc(100% - 2rem);
+  }
+  .gallery-overlay {
+    width: calc(100% - 1.75rem);
   }
 }
 @media screen and (min-width: 768px) {

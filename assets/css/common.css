@@ -570,6 +570,7 @@ body.error-page p {
     width: 100%;
     margin: 0 !important;
   }
+  
   .gallery-desc-block .common-section h6 {
     color: #fff;
   }
@@ -593,7 +594,7 @@ body.error-page p {
   .bg-img-content {
     position: absolute;
     bottom: 2rem;
-    left: 1rem;
+    left: 1.25rem;
   }
   .common-head.common-head-xs {
     font-size: 3.5rem;
@@ -1208,6 +1209,12 @@ body.error-page p {
       padding-top: 30px;
     }
   }
+
+@media screen and (max-width: 649px) {
+  .gallery-desc .common-head {
+    padding: 0 1.25rem;
+  }
+}
 
 @media screen and (max-width: 552px) {
 
